@@ -1,0 +1,13 @@
+.App{
+  background-color: rgba(0, 0, 0, 0.933);
+  color: white;
+  font-size: 20px;;
+}
+.Container{
+  background-color: rgba(21, 21, 21, 0.933);
+}
+
+.jumbotron{
+ background: none;
+
+}
