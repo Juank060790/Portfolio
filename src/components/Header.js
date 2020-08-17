@@ -27,10 +27,10 @@ export default function Header() {
         </Col>
         <Col lg={4} style={{ marginTop: "10rem", textAlign: "end" }}>
           <BounceLeft>
-            <h4>
-              Welcome to my portfolio here you'll see all the experience,
+            <h5>
+              A showcase of my portfolio, here you'll see all the experience,
               projects and achivements collected in the past years.{" "}
-            </h4>
+            </h5>
           </BounceLeft>
         </Col>
       </Container>

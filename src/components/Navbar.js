@@ -10,10 +10,10 @@ export default function NavbarTop() {
         <Navbar variant="dark">
           <Navbar.Brand href="#home">JuanCa</Navbar.Brand>
           <Nav className="mr-auto" style={{}}>
-            <Nav.Link href="#home">Profile</Nav.Link>
-            <Nav.Link href="#features">Projects</Nav.Link>
-            <Nav.Link href="#pricing">Education</Nav.Link>
-            <Nav.Link href="#pricing">Contact</Nav.Link>
+            <Nav.Link href="#profile">Profile</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#Education">Education</Nav.Link>
+            <Nav.Link href="#Contact">Contact</Nav.Link>
           </Nav>
         </Navbar>
       </Container>

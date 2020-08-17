@@ -2,6 +2,7 @@
   background-color: rgba(0, 0, 0, 0.933);
   color: white;
   font-size: 20px;;
+  font-weight: 200;
 }
 .Container{
   background-color: rgba(21, 21, 21, 0.933);
@@ -9,5 +10,18 @@
 
 .jumbotron{
  background: none;
+ margin-bottom: 0px!important; 
 
+}
+
+.profileImg{
+  border-radius: 30%;
+}
+
+p{
+  word-spacing: 2px;
+}
+.mouse-hover:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
