@@ -1,8 +1,14 @@
 import React from "react";
-import { Jumbotron, Col, Container } from "react-bootstrap";
+import { Jumbotron, Col, Container, Row } from "react-bootstrap";
 import styled, { keyframes } from "styled-components";
 import { fadeInRightBig, fadeInLeftBig } from "react-animations";
-
+import logo from "../img/logo192.png";
+import logohtml from "../img/html5logo.svg";
+import logocss from "../img/css3-alt-brands.svg";
+import logonode from "../img/node-brands.svg";
+import logojs from "../img/js-brands.svg";
+import logowp from "../img/wordpress-simple-brands.svg";
+import logoad from "../img/adobe-brands.svg";
 import "../App.css";
 
 export default function Education() {
@@ -16,7 +22,7 @@ export default function Education() {
   return (
     <Jumbotron style={{ background: "none" }}>
       <Container className="d-flex ">
-        <Col lg={7}>
+        <Col lg={6}>
           <h3>Who am I?</h3>
           <Bounce>
             <p>
@@ -24,7 +30,7 @@ export default function Education() {
               improve and learn different skills in differetn fields. Currently
               developing, growing and getting experience in the field of full
               stack developer. Right now with the experience I have earnt over
-              the years working for big, startups and own projects I can mix
+              the years working for big, startups and own projects I could mix
               them with my passion that is coding.
             </p>
             <img
@@ -35,19 +41,46 @@ export default function Education() {
             />
           </Bounce>
         </Col>
-        <Col lg={5} style={{ marginTop: "10rem", textAlign: "end" }}>
+        <Col lg={6} style={{ marginTop: "5rem", textAlign: "center" }}>
           <BounceLeft>
-            <h1>Education</h1>
-            <ol>CooderSchool Full stack Bootcamp</ol>
-            <ol>Customer service and leadership course</ol>{" "}
-            <ol>Security Awareness training</ol>
-            <ol>Personal safety and social Responsibility</ol>
-            <ol>Crowd Management Course</ol>{" "}
-            <ol>Udemy SEO and google positioning</ol>
-            <ol>SoloLearn JavaScript Tutorial</ol>
-            <ol>SoloLearn HTML Fundamentals</ol>
-            <ol>SoloLearn CSS Fundamentals</ol>
-            <ol>Professional photography course (portraits)</ol>
+            <h1>Skills</h1>
+            <Row>
+              <Col>
+                <img src={logohtml} alt="react" style={{ width: "70px" }} />
+              </Col>
+              <Col>
+                <img
+                  src={logocss}
+                  alt="react"
+                  style={{ width: "70px", marginTop: "3rem" }}
+                />
+              </Col>
+              <Col>
+                <img src={logojs} alt="react" style={{ width: "70px" }} />
+              </Col>
+            </Row>
+            <Row style={{ marginTop: "30px" }}>
+              <Col>
+                <img src={logo} alt="react" style={{ width: "70px" }} />
+              </Col>
+              <Col>
+                <img
+                  src={logonode}
+                  alt="react"
+                  style={{ width: "70px", marginTop: "3rem" }}
+                />
+              </Col>
+              <Col>
+                <img src={logowp} alt="react" style={{ width: "70px" }} />
+              </Col>
+            </Row>
+            <Col>
+              <img
+                src={logoad}
+                alt="react"
+                style={{ width: "70px", marginTop: "3rem" }}
+              />
+            </Col>
           </BounceLeft>
         </Col>
       </Container>

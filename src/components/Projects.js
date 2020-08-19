@@ -8,29 +8,23 @@ import {
   Spinner,
   Row,
 } from "react-bootstrap";
-import { useState, useEffect } from "react";
-// import { useParams } from "react-router-dom";
+import { useState } from "react";
 
-const apiAddress = process.env.REACT_APP_SERVER_URL;
+import { projectsDemo } from "../projects.constants";
 
 export default function Projects() {
-  let [app, setApp] = useState([]);
+  // eslint-disable-next-line
+  let [projects, setProjects] = useState(projectsDemo);
+  let [projectSelected, setProjectSelected] = useState(null);
   let [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
-  let getDetailData = async () => {
-    let url = apiAddress;
-    let response = await fetch(url);
-    let result = await response.json();
-    setApp(result);
+  let showModal = (item) => {
+    setProjectSelected(item);
+    setShow(true);
   };
 
-  useEffect(() => {
-    getDetailData();
-  }, []);
-
-  if (app.length === 0) {
+  if (projects.length === 0) {
     return (
       <Spinner
         animation="grow"
@@ -41,69 +35,79 @@ export default function Projects() {
   }
 
   return (
-    <Container className="d-flex">
-      {app.map((item) => {
-        return (
-          <Col md={4}>
-            <Card
-              style={{
-                width: "18rem",
-                height: 650,
-                backgroundColor: "rgba(21, 21, 21, 0.933)",
-              }}
-            >
-              <Card.Img
-                variant="top"
-                title={item.title}
-                src={item.img}
-                style={{ borderRadius: "15px", height: 250 }}
-              />
-              <Card.Body>
-                <Card.Title>{item.title}</Card.Title>
-                <Card.Text>{item.description}</Card.Text>
-              </Card.Body>
-              <Button
-                variant="warning"
-                onClick={handleShow}
-                className="mouse-hover"
-                style={{ width: "30%", margin: "auto" }}
+    <Container>
+      <h1 style={{ margin: "6rem", textAlign: "center", fontSize: "64px" }}>
+        Projects
+      </h1>
+      <Row
+        className="d-flex justify-content-center"
+        style={{ textAlign: "center" }}
+      >
+        {projects.map((item) => {
+          return (
+            <Col md={4}>
+              <Card
+                style={{
+                  width: "20rem",
+                  height: 650,
+                  backgroundColor: "rgba(21, 21, 21, 0.933)",
+                }}
               >
-                Try me!
-              </Button>
-              <Card.Body>
-                {" "}
-                <Col className="text-center">
-                  <Row></Row>
-                  {item.tags.map((tag) => {
-                    return (
-                      <span
-                        class="badge badge-warning"
-                        style={{ margin: "5px" }}
-                      >
-                        {tag}
-                      </span>
-                    );
-                  })}
-                </Col>
-              </Card.Body>
-              <Modal size="xl" show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                  <Modal.Title>{item.title}</Modal.Title>
-                </Modal.Header>
-                <iframe
-                  height="600"
-                  title="video"
-                  class="embed-responsive-item"
-                  src={item.link}
-                  allowFullScreen
+                <Card.Img
+                  variant="top"
+                  title={item.title}
+                  src={item.img}
+                  style={{ borderRadius: "15px", height: 250 }}
+                />
+                <Card.Body>
+                  <Card.Title>{item.title}</Card.Title>
+                  <Card.Text>{item.description}</Card.Text>
+                </Card.Body>
+                <Button
+                  variant="warning"
+                  onClick={(e) => showModal(item)}
+                  className="mouse-hover"
+                  style={{ width: "30%", margin: "auto" }}
                 >
+                  Try me!
+                </Button>
+                <Card.Body>
                   {" "}
-                </iframe>
-              </Modal>{" "}
-            </Card>
-          </Col>
-        );
-      })}
+                  <Col md={12} style={{ textAlign: "center" }}>
+                    {item.tags.map((tag) => {
+                      return (
+                        <span
+                          key={tag}
+                          className="badge badge-warning "
+                          style={{ margin: "5px" }}
+                        >
+                          {tag}
+                        </span>
+                      );
+                    })}
+                  </Col>
+                </Card.Body>
+              </Card>
+            </Col>
+          );
+        })}
+        <Modal size="xl" show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>
+              {projectSelected && projectSelected.title}
+            </Modal.Title>
+          </Modal.Header>
+          <iframe
+            height="600"
+            title="video"
+            class="embed-responsive-item"
+            src={projectSelected && projectSelected.link}
+            allowFullScreen
+          >
+            {" "}
+          </iframe>
+        </Modal>{" "}
+      </Row>
     </Container>
   );
 }

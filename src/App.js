@@ -11,9 +11,7 @@ function App() {
     <div className="App">
       <NavbarTop />
       <Header />
-      <h1 style={{ margin: "6rem", textAlign: "center", fontSize: "64px" }}>
-        Projects
-      </h1>
+
       <Projects />
       <Education />
     </div>
