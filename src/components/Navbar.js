@@ -10,7 +10,6 @@ export default function NavbarTop() {
         <Row md={12}>
           <Navbar
             style={{
-              marginTop: "15px",
               fontWeight: "400",
               fontSize: "23px",
             }}
