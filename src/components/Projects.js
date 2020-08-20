@@ -52,6 +52,7 @@ export default function Projects() {
                   width: "20rem",
                   height: 650,
                   backgroundColor: "rgba(21, 21, 21, 0.933)",
+                  marginBottom: "20px",
                 }}
               >
                 <Card.Img

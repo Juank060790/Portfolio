@@ -49,3 +49,20 @@ p{
   transition: 250ms ease;
   width: 100%;
 }
+
+.ContactButton:hover{
+  cursor: pointer !important;
+  box-shadow: cornflowerblue;
+}
+
+.contact-icon{
+  font-size: 60px;
+  color: rgba(255, 204, 0, 0.947);
+  margin: 20px;
+  
+}
+
+#footer{
+  padding: 20px;
+  background-color: rgba(31, 31, 31, 0.379);
+}

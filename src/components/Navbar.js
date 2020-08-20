@@ -23,7 +23,7 @@ export default function NavbarTop() {
             <Nav>
               <Nav.Link href="#projects">Projects</Nav.Link>
               <Nav.Link href="#education">Skills</Nav.Link>
-              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link href="#footer">Contact</Nav.Link>
             </Nav>
           </Navbar>
         </Row>

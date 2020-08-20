@@ -29,4 +29,14 @@ export const projectsDemo = [
     description:
       "This page is a reflection of what I have done with the pas of the time, showing one of my favorite hobbies/jobs that is photography.",
   },
+  {
+    id: 3,
+    img:
+      "https://i0.wp.com/juancaphotography.com/wp-content/uploads/2020/08/twitterApp.png?resize=1024%2C657&ssl=1",
+    title: "Twitter",
+    link: "https://nervous-austin-d3b554.netlify.app/",
+    tags: ["JS", "CSS", "HTML"],
+    description:
+      "This page is a reflection of what I have done with the pas of the time, showing one of my favorite hobbies/jobs that is photography.",
+  },
 ];
