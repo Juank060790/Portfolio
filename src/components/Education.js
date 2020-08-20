@@ -12,7 +12,7 @@ import logoad from "../img/adobe-brands.svg";
 import "../App.css";
 
 export default function Education() {
-  const Bounce = styled.div`
+  const BounceRight = styled.div`
     animation: 5s ${keyframes`${fadeInRightBig}`};
   `;
   const BounceLeft = styled.div`
@@ -20,11 +20,11 @@ export default function Education() {
   `;
 
   return (
-    <Jumbotron style={{ background: "none" }}>
+    <Jumbotron id="education" style={{ background: "none" }}>
       <Container className="d-flex ">
         <Col lg={6}>
           <h3>Who am I?</h3>
-          <Bounce>
+          <BounceRight>
             <p>
               A creative enthusiast who enjoys new challenges, always looking to
               improve and learn different skills in differetn fields. Currently
@@ -39,7 +39,7 @@ export default function Education() {
               width="350px"
               className="profileImg"
             />
-          </Bounce>
+          </BounceRight>
         </Col>
         <Col lg={6} style={{ marginTop: "5rem", textAlign: "center" }}>
           <BounceLeft>

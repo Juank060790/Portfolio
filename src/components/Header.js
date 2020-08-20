@@ -1,7 +1,8 @@
 import React from "react";
-import { Jumbotron, Button, Col, Container } from "react-bootstrap";
+import { Jumbotron, Button, Col, Container, Row } from "react-bootstrap";
 import styled, { keyframes } from "styled-components";
 import { fadeInRightBig, fadeInLeftBig } from "react-animations";
+import Particles from "react-particles-js";
 
 import "../App.css";
 
@@ -14,7 +15,7 @@ export default function Header() {
   `;
 
   return (
-    <Jumbotron style={{ background: "none" }}>
+    <Jumbotron id="home" style={{ background: "none", minHeight: "100vh" }}>
       <Container className="d-flex ">
         <Col lg={9}>
           <Bounce>
@@ -33,6 +34,30 @@ export default function Header() {
             </h5>
           </BounceLeft>
         </Col>
+        <Row>
+          <Particles
+            style={{
+              marginTop: "5%",
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "200px",
+              height: "200px",
+              color: "red",
+            }}
+            params={{
+              particles: {
+                number: {
+                  value: 50,
+                  density: {
+                    enable: true,
+                    value_area: 700,
+                  },
+                },
+              },
+            }}
+          />
+        </Row>
       </Container>
     </Jumbotron>
   );

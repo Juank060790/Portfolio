@@ -1,14 +1,22 @@
+html{
+  scroll-behavior: smooth;
+
+}
+
+
 .App{
   background-color: rgba(0, 0, 0, 0.933);
   color: white;
   font-size: 20px;;
   font-weight: 200;
+    font-family: "Courier, monospace";
 }
 .Container{
   background-color: rgba(21, 21, 21, 0.933);
 }
 
 .jumbotron{
+margin-top:10%;
  background: none;
  margin-bottom: 0px!important; 
 
@@ -26,6 +34,18 @@ p{
   cursor: pointer;
 }
 
-.htmllogo{
-  fill: coral;
+.cardOnHover:hover{
+  opacity: 1;
+  box-shadow: cornflowerblue;
+  cursor: pointer;
+}
+
+.cardOnHover{
+  opacity: .9;
+}
+
+.bg-dark {
+  background-color: white !important;
+  transition: 250ms ease;
+  width: 100%;
 }

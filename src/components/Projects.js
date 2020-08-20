@@ -35,8 +35,8 @@ export default function Projects() {
   }
 
   return (
-    <Container>
-      <h1 style={{ margin: "6rem", textAlign: "center", fontSize: "64px" }}>
+    <Container id="projects" style={{ minHeight: "100vh" }}>
+      <h1 style={{ margin: "3rem", textAlign: "center", fontSize: "64px" }}>
         Projects
       </h1>
       <Row
@@ -47,6 +47,7 @@ export default function Projects() {
           return (
             <Col md={4}>
               <Card
+                className="cardOnHover"
                 style={{
                   width: "20rem",
                   height: 650,
