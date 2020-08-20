@@ -45,7 +45,7 @@ export default function Projects() {
       >
         {projects.map((item) => {
           return (
-            <Col className="text-center" md={4} xs={8}>
+            <Col className="text-center" md={4} xs={12}>
               <Card
                 className="cardOnHover"
                 style={{

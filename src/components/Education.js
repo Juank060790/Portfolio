@@ -22,7 +22,7 @@ export default function Education() {
   return (
     <Jumbotron id="education" style={{ background: "none" }}>
       <Container className="d-flex ">
-        <Col lg={6}>
+        <Col lg={6} md={5} xs={8}>
           <h3>Who am I?</h3>
           <BounceRight>
             <p>
@@ -36,12 +36,17 @@ export default function Education() {
             <img
               src="https://i1.wp.com/juancaphotography.com/wp-content/uploads/2019/08/DSC04819-Editar.jpg?resize=768%2C512&ssl=1"
               alt="portrait"
-              width="250px"
+              width="200px"
               className="profileImg"
             />
           </BounceRight>
         </Col>
-        <Col lg={6} style={{ marginTop: "5rem", textAlign: "center" }}>
+        <Col
+          lg={6}
+          md={5}
+          xs={2}
+          style={{ marginTop: "5rem", textAlign: "center" }}
+        >
           <BounceLeft>
             <h1>Skills</h1>
             <Row>
