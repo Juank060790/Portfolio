@@ -26,7 +26,6 @@ export default function Header() {
         <Row>
           <Particles
             style={{
-              marginTop: "5%",
               position: "absolute",
               top: 0,
               left: 0,
