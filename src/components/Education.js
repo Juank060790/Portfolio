@@ -36,7 +36,7 @@ export default function Education() {
             <img
               src="https://i1.wp.com/juancaphotography.com/wp-content/uploads/2019/08/DSC04819-Editar.jpg?resize=768%2C512&ssl=1"
               alt="portrait"
-              width="350px"
+              width="250px"
               className="profileImg"
             />
           </BounceRight>

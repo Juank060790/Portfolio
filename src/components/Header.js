@@ -1,5 +1,5 @@
-import React from "react";
-import { Jumbotron, Button, Col, Container, Row } from "react-bootstrap";
+import React, { useState } from "react";
+import { Jumbotron, Button, Col, Container, Row, Modal } from "react-bootstrap";
 import styled, { keyframes } from "styled-components";
 import { fadeInRightBig, fadeInLeftBig } from "react-animations";
 import Particles from "react-particles-js";
@@ -7,6 +7,12 @@ import Particles from "react-particles-js";
 import "../App.css";
 
 export default function Header() {
+  let showModal = () => {
+    setShow(true);
+  };
+  let [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+
   const Bounce = styled.div`
     animation: 5s ${keyframes`${fadeInRightBig}`};
   `;
@@ -46,7 +52,11 @@ export default function Header() {
             <h1>Juan Carlos Duran Solorzano</h1>
             <p>Welcome!</p>
             <p>
-              <Button className="ContactButton" variant="warning">
+              <Button
+                onClick={showModal}
+                className="ContactButton"
+                variant="warning"
+              >
                 Contact
               </Button>
             </p>{" "}
@@ -61,6 +71,15 @@ export default function Header() {
           </BounceLeft>
         </Col>
       </Container>
+      <Modal size="sm" show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>
+            <h1>Contact</h1>
+          </Modal.Title>
+        </Modal.Header>
+        <ol>Email: Juank060790@gmail.com</ol>
+        <ol>Phone: 0388595445</ol>
+      </Modal>{" "}
     </Jumbotron>
   );
 }

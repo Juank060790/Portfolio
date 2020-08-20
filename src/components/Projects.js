@@ -40,12 +40,12 @@ export default function Projects() {
         Projects
       </h1>
       <Row
-        className="d-flex justify-content-center"
-        style={{ textAlign: "center" }}
+        className="d-flex justify-content-center "
+        style={{ textAlign: "center", margin: "auto" }}
       >
         {projects.map((item) => {
           return (
-            <Col md={4}>
+            <Col className="text-center" md={4} xs={8}>
               <Card
                 className="cardOnHover"
                 style={{

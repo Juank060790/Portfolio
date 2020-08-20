@@ -6,21 +6,20 @@ import "../App.css";
 export default function NavbarTop() {
   return (
     <div>
-      <Container className="d-flex justify-content-center">
-        <Row md={8}>
+      <Container className="d-flex justify-content-center navbarMenu">
+        <Row md={12}>
           <Navbar
             style={{
-              marginLeft: "40%",
               marginTop: "15px",
               fontWeight: "400",
-              fontSize: "20px",
+              fontSize: "23px",
             }}
-            className="mr-auto"
+            className="mr-auto navbarMenu"
             fixed="top"
             variant="dark"
           >
-            <Navbar.Brand href="#home">JuanCa</Navbar.Brand>
-            <Nav>
+            <Nav className="NavbarText" style={{ marginLeft: "3%" }}>
+              <Nav.Link href="#home">JuanCa</Nav.Link>
               <Nav.Link href="#projects">Projects</Nav.Link>
               <Nav.Link href="#education">Skills</Nav.Link>
               <Nav.Link href="#footer">Contact</Nav.Link>

@@ -1,6 +1,5 @@
 html{
   scroll-behavior: smooth;
-
 }
 
 
@@ -9,7 +8,8 @@ html{
   color: white;
   font-size: 20px;;
   font-weight: 200;
-    font-family: "Courier, monospace";
+  font-family: "Courier, monospace";
+  width: 100%;
 }
 .Container{
   background-color: rgba(21, 21, 21, 0.933);
@@ -36,14 +36,19 @@ p{
 
 .cardOnHover:hover{
   opacity: 1;
-  box-shadow: cornflowerblue;
+
   cursor: pointer;
 }
 
 .cardOnHover{
   opacity: .9;
+  
 }
 
+.navbarMenu{
+  background-image: radial-gradient(circle, #06060646 0%, #d2d0c82c 100%);
+ 
+}
 .bg-dark {
   background-color: white !important;
   transition: 250ms ease;
