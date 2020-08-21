@@ -47,7 +47,7 @@ p{
 
 .navbarMenu{
   background-image: radial-gradient(circle, #06060646 0%, #d2d0c82c 100%);
- 
+  background-color: rgba(0, 0, 0, 0.933);
 }
 .bg-dark {
   background-color: white !important;
@@ -57,7 +57,6 @@ p{
 
 .ContactButton:hover{
   cursor: pointer !important;
-  box-shadow: cornflowerblue;
 }
 
 .contact-icon{
