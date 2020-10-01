@@ -32,6 +32,16 @@ export const projectsDemo = [
   {
     id: 3,
     img:
+      "https://res.cloudinary.com/juankspw/image/upload/c_fit,q_100,w_835/v1601537507/Screen_Shot_2020-10-01_at_14.26.50_e61nmu.png",
+    title: "Saigon Photo Walk",
+    link: "https://spw-juancarlos.netlify.app/",
+    tags: ["Reactjs", "MondoDB", "Mongoose", "NodeJs"],
+    description:
+      "This page is a reflection of what I have done with the pas of the time, showing one of my favorite hobbies/jobs that is photography.",
+  },
+  {
+    id: 4,
+    img:
       "https://i0.wp.com/juancaphotography.com/wp-content/uploads/2020/08/twitterApp.png?resize=1024%2C657&ssl=1",
     title: "Twitter",
     link: "https://nervous-austin-d3b554.netlify.app/",
