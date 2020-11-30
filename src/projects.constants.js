@@ -49,4 +49,14 @@ export const projectsDemo = [
     description:
       "This page is a reflection of what I have done with the pas of the time, showing one of my favorite hobbies/jobs that is photography.",
   },
+  {
+    id: 5,
+    img:
+      "https://res.cloudinary.com/juankspw/image/upload/v1606710237/ytsvny9hootn1kkfhpa2.png",
+    title: "Online Job Fair",
+    link: "https://jobfair2020.coderschool.vn/",
+    tags: ["Reactjs", "MondoDB", "Mongoose", "NodeJs"],
+    description:
+      "This project was made for coderschool where it gives the chance to the user to search, apply and contact new employers for a job search.",
+  },
 ];
