@@ -1,21 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap');
+
+
+body{
+  font-family: 'Roboto Slab', serif;  letter-spacing: 1px;
+}
+
 html{
   scroll-behavior: smooth;
 }
-
-
 .App{
   background-color: rgba(0, 0, 0, 0.933);
   color: white;
   font-size: 20px;;
   font-weight: 200;
-  font-family: "Courier, monospace";
   width: 100%;
 }
-.Container{
+/* .container-color{
   background-color: rgba(21, 21, 21, 0.933);
-}
+} */
 
-.jumbotron{
+.jumbotron-margin{
 margin-top:10%;
  background: none;
  margin-bottom: 0px!important; 

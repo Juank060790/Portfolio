@@ -7,7 +7,7 @@ export const projectsDemo = [
     link: "https://admiring-villani-c38294.netlify.app/",
     tags: ["React", "HTML", "CSS"],
     description:
-      "An application to feature the top rated movies according genre and year this application is made with React conecting an Api to get real and updated information about the movies world.",
+      "An application which features top rated movies according to their genre and year. This application was made with React, using an API to retrieve real-time information from movies around the world.",
   },
   {
     id: 1,
@@ -17,7 +17,7 @@ export const projectsDemo = [
     link: "https://adoring-leakey-12080e.netlify.app/",
     tags: ["JS", "CSS", "HTML"],
     description:
-      "A simple game that reflect vietnamese culture with the traffic roads and scooters everywhere, this project was made on JS, HTML and CSS.",
+      "A simple game that reflects the chaos of Vietnam’s traffic and scooter culture! This was made using JS, HTML and CSS.",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ export const projectsDemo = [
     link: "https://juancaphotography.com/",
     tags: ["Wordpress"],
     description:
-      "This page is a reflection of what I have done with the pas of the time, showing one of my favorite hobbies/jobs that is photography.",
+      "This page showcases my main craft: Photography. It is a reflection of what I have accomplished over the years.",
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ export const projectsDemo = [
     link: "https://spw-juancarlos.netlify.app/",
     tags: ["Reactjs", "MondoDB", "Mongoose", "NodeJs"],
     description:
-      "This page is a reflection of what I have done with the pas of the time, showing one of my favorite hobbies/jobs that is photography.",
+      "My very own enterprise in Ho Chi Minh City, Vietnam, I started Saigon Photo Walk to encourage photography enthusiasts to improve their skills by exploring the streets of the city.",
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ export const projectsDemo = [
     link: "https://nervous-austin-d3b554.netlify.app/",
     tags: ["JS", "CSS", "HTML"],
     description:
-      "This page is a reflection of what I have done with the pas of the time, showing one of my favorite hobbies/jobs that is photography.",
+      "This is just copy of the layout of Twitter with a very basic functions",
   },
   {
     id: 5,
@@ -57,6 +57,6 @@ export const projectsDemo = [
     link: "https://jobfair2020.coderschool.vn/",
     tags: ["Reactjs", "MondoDB", "Mongoose", "NodeJs"],
     description:
-      "This project was made for coderschool where it gives the chance to the user to search, apply and contact new employers for a job search.",
+      "I built this project for coderschool, to allow users to search, apply and contact new employers concerning their careers.",
   },
 ];

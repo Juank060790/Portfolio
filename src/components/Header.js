@@ -21,7 +21,11 @@ export default function Header() {
   `;
 
   return (
-    <Jumbotron id="home" style={{ background: "none", minHeight: "100vh" }}>
+    <Jumbotron
+      className="jumbotron-margin"
+      id="home"
+      style={{ background: "none", minHeight: "100vh" }}
+    >
       <Container className="d-flex ">
         <Row>
           <Particles
@@ -46,7 +50,7 @@ export default function Header() {
             }}
           />
         </Row>{" "}
-        <Col lg={9}>
+        <Col lg={9} md={6}>
           <Bounce>
             <h1>Juan Carlos Duran Solorzano</h1>
             <p>Welcome!</p>
@@ -61,11 +65,11 @@ export default function Header() {
             </p>{" "}
           </Bounce>
         </Col>
-        <Col lg={4} style={{ marginTop: "10rem", textAlign: "end" }}>
+        <Col lg={4} md={6} style={{ marginTop: "10rem", textAlign: "end" }}>
           <BounceLeft>
             <h3>
-              A showcase of my portfolio, here you'll see all the experience,
-              projects and achivements collected in the past years.{" "}
+              A showcase of my portfolio, here you will find a collection of all
+              my experience, projects and achievements to date.{" "}
             </h3>
           </BounceLeft>
         </Col>

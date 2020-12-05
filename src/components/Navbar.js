@@ -17,7 +17,7 @@ export default function NavbarTop() {
             fixed="top"
             variant="dark"
           >
-            <Nav className="NavbarText" style={{ marginLeft: "3%" }}>
+            <Nav className="NavbarText">
               <Nav.Link href="#home">JuanCa</Nav.Link>
               <Nav.Link href="#projects">Projects</Nav.Link>
               <Nav.Link href="#education">Skills</Nav.Link>

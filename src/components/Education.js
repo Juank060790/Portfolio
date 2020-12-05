@@ -26,12 +26,13 @@ export default function Education() {
           <h3>Who am I?</h3>
           <BounceRight>
             <p>
-              A creative enthusiast who enjoys new challenges, always looking to
-              improve and learn different skills in differetn fields. Currently
-              developing, growing and getting experience in the field of full
-              stack developer. Right now with the experience I have earnt over
-              the years working for big, startups and own projects I could mix
-              them with my passion that is coding.
+              A creative who enjoys new challenges. I am constantly looking to
+              improve and learn different skills across a variety of fields.
+              Currently, I am developing, growing and building experience as a
+              full stack developer. Over the years I have worked for large
+              organisations, startups and started my own enterprises. My
+              ambition is to use these skills and combine them with my newest
+              passion: coding.
             </p>
             <img
               src="https://i1.wp.com/juancaphotography.com/wp-content/uploads/2019/08/DSC04819-Editar.jpg?resize=768%2C512&ssl=1"
