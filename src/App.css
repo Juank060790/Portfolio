@@ -11,27 +11,24 @@ html{
 .App{
   background-color: rgba(0, 0, 0, 0.933);
   color: white;
-  font-size: 20px;;
+  font-size: 18px;;
   font-weight: 200;
-  width: 100%;
 }
-/* .container-color{
-  background-color: rgba(21, 21, 21, 0.933);
-} */
+
 
 .jumbotron-margin{
 margin-top:10%;
  background: none;
  margin-bottom: 0px!important; 
 
-}
+} 
 
 .profileImg{
   border-radius: 30%;
 }
 
 p{
-  word-spacing: 2px;
+  word-spacing: 1px;
 }
 .mouse-hover:hover {
   opacity: 0.8;
@@ -56,7 +53,7 @@ p{
 .bg-dark {
   background-color: white !important;
   transition: 250ms ease;
-  width: 100%;
+
 }
 
 .ContactButton:hover{
@@ -73,4 +70,65 @@ p{
 #footer{
   padding: 20px;
   background-color: rgba(31, 31, 31, 0.379);
+}
+
+
+.rowIcons{
+  margin: auto
+}
+
+.contact-wrap-icons{
+    flex-direction: column;
+  }
+/* Responsive query */
+
+.projectTitle{
+  font-size:40px;
+  text-align: center;
+}
+
+.logosBox{
+  
+}
+.headerIntro{
+  margin-top: 20%;
+}
+
+/* .logoFlexDirection {
+  display:flex;
+  flex-direction: row;
+  margin: auto;
+} */
+
+@media (max-width: 800px) {
+  .headerText{
+    flex-direction: column;
+  }
+
+  /* .logoFlexDirection {
+    flex-direction: column;
+    margin: auto;
+  } */
+  .headerIntro{
+    margin-top: 1rem;
+  }
+  .projectTitle{
+    font-size:30px;
+  }
+  .rowLogos{
+    margin-left: auto;
+  }
+  .footerSection{
+    flex-direction: column;
+  }
+  
+}
+@media (max-width: 430px) {
+  .logoFlexDirection{
+    display: flex;
+flex-direction: column;
+  }
+  .LogosSkills{
+    margin-top: 2rem;
+  }
 }

@@ -3,7 +3,7 @@ import {
   Card,
   Col,
   Button,
-  Modal,
+  // Modal,
   Container,
   Spinner,
   Row,
@@ -15,14 +15,14 @@ import { projectsDemo } from "../projects.constants";
 export default function Projects() {
   // eslint-disable-next-line
   let [projects, setProjects] = useState(projectsDemo);
-  let [projectSelected, setProjectSelected] = useState(null);
-  let [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
+  // let [projectSelected, setProjectSelected] = useState(null);
+  // let [show, setShow] = useState(false);
+  // const handleClose = () => setShow(false);
 
-  let showModal = (item) => {
-    setProjectSelected(item);
-    setShow(true);
-  };
+  // let showModal = (item) => {
+  //   setProjectSelected(item);
+  //   setShow(true);
+  // };
 
   if (projects.length === 0) {
     return (
@@ -36,23 +36,28 @@ export default function Projects() {
 
   return (
     <Container id="projects" style={{ minHeight: "100vh" }}>
-      <h1 style={{ margin: "3rem", textAlign: "center", fontSize: "64px" }}>
-        Projects
-      </h1>
+      <div style={{ margin: "2rem" }}>
+        <h1
+          className="projectTitle"
+          style={{ margin: "auto", textAlign: "center" }}
+        >
+          Projects
+        </h1>
+      </div>
       <Row
         className="d-flex justify-content-center "
-        style={{ textAlign: "center", margin: "auto" }}
+        // style={{ textAlign: "center", margin: "auto" }}
       >
         {projects.map((item) => {
           return (
-            <Col className="text-center d-flex" md={4} xs={12}>
+            <Col className=" text-center d-flex" lg={4} md={6} xs={8} sm={8}>
               <Card
-                className="cardOnHover"
+                className="cardOnHover projectsCol"
                 style={{
                   width: "20rem",
-                  height: 650,
+                  height: "auto",
                   backgroundColor: "rgba(21, 21, 21, 0.933)",
-                  marginBottom: "20px",
+                  marginBottom: "3rem",
                 }}
               >
                 <Card.Img
@@ -65,14 +70,16 @@ export default function Projects() {
                   <Card.Title>{item.title}</Card.Title>
                   <Card.Text>{item.description}</Card.Text>
                 </Card.Body>
-                <Button
-                  variant="warning"
-                  onClick={(e) => showModal(item)}
-                  className="mouse-hover"
-                  style={{ width: "30%", margin: "auto" }}
-                >
-                  Try me!
-                </Button>
+                <a href={item.link} target="_new">
+                  <Button
+                    variant="warning"
+                    // onClick={(e) => showModal(item)}
+                    className="mouse-hover"
+                    style={{ width: "30%", margin: "auto" }}
+                  >
+                    Try me!
+                  </Button>
+                </a>
                 <Card.Body>
                   {" "}
                   <Col md={12} style={{ textAlign: "center" }}>
@@ -93,7 +100,7 @@ export default function Projects() {
             </Col>
           );
         })}
-        <Modal size="xl" show={show} onHide={handleClose}>
+        {/* <Modal size="xl" show={show} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>
               {projectSelected && projectSelected.title}
@@ -108,7 +115,7 @@ export default function Projects() {
           >
             {" "}
           </iframe>
-        </Modal>{" "}
+        </Modal>{" "} */}
       </Row>
     </Container>
   );

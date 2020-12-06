@@ -26,7 +26,7 @@ export default function Header() {
       id="home"
       style={{ background: "none", minHeight: "100vh" }}
     >
-      <Container className="d-flex ">
+      <Container className="d-flex headerText ">
         <Row>
           <Particles
             style={{
@@ -43,17 +43,17 @@ export default function Header() {
                   value: 50,
                   density: {
                     enable: true,
-                    value_area: 700,
+                    value_area: 500,
                   },
                 },
               },
             }}
           />
         </Row>{" "}
-        <Col lg={9} md={6}>
+        <Col lg={9} md={8} sm={12} xs={12}>
           <Bounce>
             <h1>Juan Carlos Duran Solorzano</h1>
-            <p>Welcome!</p>
+            {/* <p>Welcome!</p> */}
             <p>
               <Button
                 onClick={showModal}
@@ -65,7 +65,14 @@ export default function Header() {
             </p>{" "}
           </Bounce>
         </Col>
-        <Col lg={4} md={6} style={{ marginTop: "10rem", textAlign: "end" }}>
+        <Col
+          className="headerIntro"
+          lg={4}
+          md={6}
+          sm={12}
+          xs={12}
+          style={{ textAlign: "end" }}
+        >
           <BounceLeft>
             <h3>
               A showcase of my portfolio, here you will find a collection of all
