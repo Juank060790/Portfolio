@@ -5,6 +5,12 @@ body{
   font-family: 'Roboto Slab', serif;  letter-spacing: 1px;
 }
 
+.titleweight{
+  font-weight: 300
+}
+
+
+
 html{
   scroll-behavior: smooth;
 }
@@ -87,18 +93,31 @@ p{
   text-align: center;
 }
 
-.logosBox{
-  
-}
+
 .headerIntro{
   margin-top: 20%;
 }
 
-/* .logoFlexDirection {
-  display:flex;
-  flex-direction: row;
+.LogosSkills{
   margin: auto;
-} */
+  max-width:40%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.logoSkills{
+  margin: 1rem;
+}
+
+
+
+
+/* text overflow */
+.textoverflow{
+  overflow-wrap: break-word;
+}
+
 
 @media (max-width: 800px) {
   .headerText{
@@ -122,6 +141,7 @@ p{
     flex-direction: column;
   }
   
+  
 }
 @media (max-width: 430px) {
   .logoFlexDirection{
@@ -130,5 +150,18 @@ flex-direction: column;
   }
   .LogosSkills{
     margin-top: 2rem;
+  }
+  .projectCard{
+    min-width:100vw;
+    
+  }
+  .projectsCol{
+    margin: auto;
+  }
+  .profileImg{
+    width: 50%;
+  }
+  .alignLogos{
+    margin: auto;
   }
 }

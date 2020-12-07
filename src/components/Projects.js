@@ -50,7 +50,13 @@ export default function Projects() {
       >
         {projects.map((item) => {
           return (
-            <Col className=" text-center d-flex" lg={4} md={6} xs={8} sm={8}>
+            <Col
+              className="projectCard text-center d-flex"
+              lg={4}
+              md={6}
+              xs={12}
+              sm={6}
+            >
               <Card
                 className="cardOnHover projectsCol"
                 style={{
@@ -87,8 +93,8 @@ export default function Projects() {
                       return (
                         <span
                           key={tag}
-                          className="badge badge-warning "
-                          style={{ margin: "5px" }}
+                          className="badge badge-success "
+                          style={{ margin: "5px", color: "black" }}
                         >
                           {tag}
                         </span>

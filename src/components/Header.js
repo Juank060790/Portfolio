@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Jumbotron, Button, Col, Container, Row, Modal } from "react-bootstrap";
+import { Jumbotron, Button, Col, Container, Modal } from "react-bootstrap";
 import styled, { keyframes } from "styled-components";
 import { fadeInRightBig, fadeInLeftBig } from "react-animations";
 import Particles from "react-particles-js";
@@ -24,10 +24,10 @@ export default function Header() {
     <Jumbotron
       className="jumbotron-margin"
       id="home"
-      style={{ background: "none", minHeight: "100vh" }}
+      style={{ background: "none", minHeight: "50vh" }}
     >
       <Container className="d-flex headerText ">
-        <Row>
+        <div style={{ background: "none" }}>
           <Particles
             style={{
               position: "absolute",
@@ -35,7 +35,8 @@ export default function Header() {
               left: 0,
               width: "200px",
               height: "200px",
-              color: "red",
+              maxHeight: "70vh",
+              color: "#ffcc00",
             }}
             params={{
               particles: {
@@ -49,10 +50,10 @@ export default function Header() {
               },
             }}
           />
-        </Row>{" "}
-        <Col lg={9} md={8} sm={12} xs={12}>
+        </div>{" "}
+        <Col lg={6} md={7} sm={12} xs={12}>
           <Bounce>
-            <h1>Juan Carlos Duran Solorzano</h1>
+            <h1 className="titleweight">Juan Carlos Duran Solorzano</h1>
             {/* <p>Welcome!</p> */}
             <p>
               <Button
@@ -67,14 +68,14 @@ export default function Header() {
         </Col>
         <Col
           className="headerIntro"
-          lg={4}
+          lg={6}
           md={6}
           sm={12}
           xs={12}
           style={{ textAlign: "end" }}
         >
           <BounceLeft>
-            <h3>
+            <h3 className="titleweight">
               A showcase of my portfolio, here you will find a collection of all
               my experience, projects and achievements to date.{" "}
             </h3>

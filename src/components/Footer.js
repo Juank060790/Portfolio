@@ -1,7 +1,7 @@
 import React from "react";
 
 import "../App.css";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col } from "react-bootstrap";
 
 const Footer = () => {
   return (
@@ -14,7 +14,7 @@ const Footer = () => {
               For more detailed information, do not hesitate to reach me at:
             </p>
 
-            <p className="contact-infor">
+            <p className="contact-infor textoverflow">
               {" "}
               <i className="far fa-envelope"></i> juank060790@gmail.com
             </p>
