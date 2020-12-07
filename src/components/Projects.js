@@ -72,23 +72,12 @@ export default function Projects() {
                   src={item.img}
                   style={{ borderRadius: "15px", height: 250 }}
                 />
-                <Card.Body>
+                <Card.Body className="d-flex flex-column">
                   <Card.Title>{item.title}</Card.Title>
                   <Card.Text>{item.description}</Card.Text>
                 </Card.Body>
-                <a href={item.link} target="_new">
-                  <Button
-                    variant="warning"
-                    // onClick={(e) => showModal(item)}
-                    className="mouse-hover"
-                    style={{ width: "30%", margin: "auto" }}
-                  >
-                    Try me!
-                  </Button>
-                </a>
-                <Card.Body>
-                  {" "}
-                  <Col md={12} style={{ textAlign: "center" }}>
+                <div className="mt-auto">
+                  <div md={12} style={{ textAlign: "center" }}>
                     {item.tags.map((tag) => {
                       return (
                         <span
@@ -100,8 +89,18 @@ export default function Projects() {
                         </span>
                       );
                     })}
-                  </Col>
-                </Card.Body>
+                  </div>
+                  <a href={item.link} target="_new">
+                    <Button
+                      variant="warning"
+                      // onClick={(e) => showModal(item)}
+                      className="mouse-hover m-2 p-2"
+                      style={{ width: "30%", margin: "auto" }}
+                    >
+                      Try me!
+                    </Button>
+                  </a>{" "}
+                </div>
               </Card>
             </Col>
           );

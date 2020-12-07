@@ -47,7 +47,7 @@ export const projectsDemo = [
     link: "https://nervous-austin-d3b554.netlify.app/",
     tags: ["JS", "CSS", "HTML"],
     description:
-      "This is just copy of the layout of Twitter with a very basic functions",
+      "This is just copy of the layout of Twitter where you can cretae posts and comment.",
   },
   {
     id: 5,
