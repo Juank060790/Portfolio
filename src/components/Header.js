@@ -24,7 +24,7 @@ export default function Header() {
     <Jumbotron
       className="jumbotron-margin"
       id="home"
-      style={{ background: "none", minHeight: "50vh" }}
+      style={{ background: "none", minHeight: "40vh" }}
     >
       <Container className="d-flex headerText ">
         <div style={{ background: "none" }}>
@@ -35,8 +35,7 @@ export default function Header() {
               left: 0,
               width: "200px",
               height: "200px",
-              maxHeight: "70vh",
-              color: "#ffcc00",
+              maxHeight: "50vh",
             }}
             params={{
               particles: {
@@ -44,7 +43,7 @@ export default function Header() {
                   value: 50,
                   density: {
                     enable: true,
-                    value_area: 500,
+                    value_area: 400,
                   },
                 },
               },

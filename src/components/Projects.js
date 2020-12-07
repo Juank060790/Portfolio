@@ -35,7 +35,7 @@ export default function Projects() {
   }
 
   return (
-    <Container id="projects" style={{ minHeight: "100vh" }}>
+    <Container id="projects">
       <div style={{ margin: "2rem" }}>
         <h1
           className="projectTitle"
@@ -70,13 +70,13 @@ export default function Projects() {
                   variant="top"
                   title={item.title}
                   src={item.img}
-                  style={{ borderRadius: "15px", height: 250 }}
+                  style={{ borderRadius: "15px", height: 230 }}
                 />
                 <Card.Body className="d-flex flex-column">
                   <Card.Title>{item.title}</Card.Title>
                   <Card.Text>{item.description}</Card.Text>
                 </Card.Body>
-                <div className="mt-auto">
+                <div className="mt-auto paddingButton">
                   <div md={12} style={{ textAlign: "center" }}>
                     {item.tags.map((tag) => {
                       return (
@@ -93,9 +93,8 @@ export default function Projects() {
                   <a href={item.link} target="_new">
                     <Button
                       variant="warning"
-                      // onClick={(e) => showModal(item)}
-                      className="mouse-hover m-2 p-2"
-                      style={{ width: "30%", margin: "auto" }}
+                      className="mouse-hover m-2"
+                      style={{ width: "40%", margin: "auto" }}
                     >
                       Try me!
                     </Button>

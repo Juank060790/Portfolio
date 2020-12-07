@@ -23,7 +23,7 @@ html{
 
 
 .jumbotron-margin{
-margin-top:10%;
+margin-top:5%;
  background: none;
  margin-bottom: 0px!important; 
 
@@ -111,7 +111,9 @@ p{
   margin: 1rem;
 }
 
-
+.paddingButton{
+  margin: 10px;
+}
 
 
 /* text overflow */
