@@ -171,3 +171,16 @@ flex-direction: column;
     margin: auto;
   }
 }
+
+@media (max-width: 600px) {
+  .headerText{
+    margin-top: 2rem;
+  }
+
+  .projectsCol{
+    width:100% !important;
+    
+  }
+  
+  }
+  

@@ -46,7 +46,7 @@ export default function Projects() {
               className="projectCard text-center d-flex"
               lg={4}
               md={6}
-              xs={12}
+              xs={10}
               sm={6}
             >
               <Card
