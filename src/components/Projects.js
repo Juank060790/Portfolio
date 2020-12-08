@@ -70,7 +70,7 @@ export default function Projects() {
                   variant="top"
                   title={item.title}
                   src={item.img}
-                  style={{ borderRadius: "15px", height: 230 }}
+                  style={{ borderRadius: "15px", height: "auto" }}
                 />
                 <Card.Body className="d-flex flex-column">
                   <Card.Title>{item.title}</Card.Title>

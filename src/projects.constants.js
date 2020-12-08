@@ -2,7 +2,7 @@ export const projectsDemo = [
   {
     id: 0,
     img:
-      "https://i2.wp.com/juancaphotography.com/wp-content/uploads/2020/08/movieApp.png?w=1140&ssl=1",
+      "https://res.cloudinary.com/juankspw/image/upload/v1607408576/tpsyga7lp5scm7hzri4x.png",
     title: "Movie App",
     link: "https://admiring-villani-c38294.netlify.app/",
     tags: ["React", "HTML", "CSS"],
@@ -12,7 +12,7 @@ export const projectsDemo = [
   {
     id: 1,
     img:
-      "https://i0.wp.com/juancaphotography.com/wp-content/uploads/2020/08/2dGame.png?w=1141&ssl=1",
+      "https://res.cloudinary.com/juankspw/image/upload/v1607408574/zckxccudtqi6gpqpitpo.png",
     title: "2D Game",
     link: "https://adoring-leakey-12080e.netlify.app/",
     tags: ["JS", "CSS", "HTML"],
@@ -22,7 +22,7 @@ export const projectsDemo = [
   {
     id: 2,
     img:
-      "https://i2.wp.com/juancaphotography.com/wp-content/uploads/2020/08/juancaPhotographyporfolio.png?resize=1024%2C690&ssl=1",
+      "https://res.cloudinary.com/juankspw/image/upload/v1607408571/oslfgzxkdaweifknposo.png",
     title: "Photography Website",
     link: "https://juancaphotography.com/",
     tags: ["Wordpress"],
@@ -32,7 +32,7 @@ export const projectsDemo = [
   {
     id: 3,
     img:
-      "https://res.cloudinary.com/juankspw/image/upload/c_fit,q_100,w_835/v1601537507/Screen_Shot_2020-10-01_at_14.26.50_e61nmu.png",
+      "https://res.cloudinary.com/juankspw/image/upload/v1607408575/la4goyuhczz9jnxuvchs.png",
     title: "Saigon Photo Walk",
     link: "https://spw-juancarlos.netlify.app/",
     tags: ["Reactjs", "MondoDB", "Mongoose", "NodeJs"],
@@ -42,7 +42,7 @@ export const projectsDemo = [
   {
     id: 4,
     img:
-      "https://i0.wp.com/juancaphotography.com/wp-content/uploads/2020/08/twitterApp.png?resize=1024%2C657&ssl=1",
+      "https://res.cloudinary.com/juankspw/image/upload/v1607408566/s1axp0wkxkeccccgwo5h.png",
     title: "Twitter",
     link: "https://nervous-austin-d3b554.netlify.app/",
     tags: ["JS", "CSS", "HTML"],
@@ -52,7 +52,7 @@ export const projectsDemo = [
   {
     id: 5,
     img:
-      "https://res.cloudinary.com/juankspw/image/upload/v1606710237/ytsvny9hootn1kkfhpa2.png",
+      "https://res.cloudinary.com/juankspw/image/upload/v1607408572/cfiygmzyrnbfv79eivbr.png",
     title: "Online Job Fair",
     link: "https://jobfair2020.coderschool.vn/",
     tags: ["Reactjs", "MondoDB", "Mongoose", "NodeJs"],
