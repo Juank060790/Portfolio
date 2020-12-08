@@ -55,7 +55,7 @@ export default function Education() {
               <img
                 className="logoSkills"
                 src={logohtml}
-                alt="react"
+                alt="html"
                 style={{ width: "70px" }}
               />
             </div>
@@ -63,7 +63,7 @@ export default function Education() {
               <img
                 className="logoSkills"
                 src={logocss}
-                alt="react"
+                alt="CSS"
                 style={{ width: "70px" }}
               />
             </div>
@@ -71,7 +71,7 @@ export default function Education() {
               <img
                 className="logoSkills"
                 src={logojs}
-                alt="react"
+                alt="JS"
                 style={{ width: "70px" }}
               />
             </div>
@@ -88,7 +88,7 @@ export default function Education() {
               <img
                 className="logoSkills"
                 src={logonode}
-                alt="react"
+                alt="NodeJS"
                 style={{ width: "70px" }}
               />
             </div>
@@ -96,7 +96,7 @@ export default function Education() {
               <img
                 className="logoSkills"
                 src={logowp}
-                alt="react"
+                alt="WP"
                 style={{ width: "70px" }}
               />
             </div>
@@ -105,7 +105,7 @@ export default function Education() {
               <img
                 className="logoSkills"
                 src={logoad}
-                alt="react"
+                alt="Adobe"
                 style={{ width: "70px" }}
               />
             </div>

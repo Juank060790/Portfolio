@@ -9,20 +9,12 @@ import {
   Row,
 } from "react-bootstrap";
 import { useState } from "react";
-
+import "../App.css";
 import { projectsDemo } from "../projects.constants";
 
 export default function Projects() {
   // eslint-disable-next-line
   let [projects, setProjects] = useState(projectsDemo);
-  // let [projectSelected, setProjectSelected] = useState(null);
-  // let [show, setShow] = useState(false);
-  // const handleClose = () => setShow(false);
-
-  // let showModal = (item) => {
-  //   setProjectSelected(item);
-  //   setShow(true);
-  // };
 
   if (projects.length === 0) {
     return (
@@ -58,19 +50,19 @@ export default function Projects() {
               sm={6}
             >
               <Card
-                className="cardOnHover projectsCol"
                 style={{
                   width: "20rem",
                   height: "auto",
-                  backgroundColor: "rgba(21, 21, 21, 0.933)",
+                  backgroundColor: " #33b6e531",
                   marginBottom: "3rem",
                 }}
+                className=" projectsCol"
               >
                 <Card.Img
                   variant="top"
                   title={item.title}
                   src={item.img}
-                  style={{ borderRadius: "15px", height: "auto" }}
+                  style={{ borderRadius: "5px", height: "auto" }}
                 />
                 <Card.Body className="d-flex flex-column">
                   <Card.Title>{item.title}</Card.Title>
@@ -104,22 +96,6 @@ export default function Projects() {
             </Col>
           );
         })}
-        {/* <Modal size="xl" show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>
-              {projectSelected && projectSelected.title}
-            </Modal.Title>
-          </Modal.Header>
-          <iframe
-            height="600"
-            title="video"
-            class="embed-responsive-item"
-            src={projectSelected && projectSelected.link}
-            allowFullScreen
-          >
-            {" "}
-          </iframe>
-        </Modal>{" "} */}
       </Row>
     </Container>
   );
