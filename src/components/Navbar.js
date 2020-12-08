@@ -19,10 +19,18 @@ export default function NavbarTop() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="navbar-light">
-            <Nav.Link href="#home">JuanCa</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#education">Skills</Nav.Link>
-            <Nav.Link href="#footer">Contact</Nav.Link>
+            <Nav.Link className="m-2" href="#home">
+              JuanCa
+            </Nav.Link>
+            <Nav.Link className="m-2" href="#projects">
+              Projects
+            </Nav.Link>
+            <Nav.Link className="m-2" href="#education">
+              Skills
+            </Nav.Link>
+            <Nav.Link className="m-2" href="#footer">
+              Contact
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

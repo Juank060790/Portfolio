@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Jumbotron, Button, Col, Container, Modal } from "react-bootstrap";
+import React from "react";
+import { Jumbotron, Col, Container } from "react-bootstrap";
 import styled, { keyframes } from "styled-components";
 import { fadeInRightBig, fadeInLeftBig } from "react-animations";
 import Particles from "react-particles-js";
@@ -7,17 +7,17 @@ import Particles from "react-particles-js";
 import "../App.css";
 
 export default function Header() {
-  let showModal = () => {
-    setShow(true);
-  };
-  let [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
+  // let showModal = () => {
+  //   setShow(true);
+  // };
+  // let [show, setShow] = useState(false);
+  // const handleClose = () => setShow(false);
 
   const Bounce = styled.div`
-    animation: 5s ${keyframes`${fadeInRightBig}`};
+    animation: 2s ${keyframes`${fadeInRightBig}`};
   `;
   const BounceLeft = styled.div`
-    animation: 5s ${keyframes`${fadeInLeftBig}`};
+    animation: 2s ${keyframes`${fadeInLeftBig}`};
   `;
 
   return (
@@ -29,29 +29,21 @@ export default function Header() {
       <Container className="d-flex headerText ">
         <Col lg={6} md={7} sm={12} xs={12}>
           <Bounce>
-            <h1 className="titleweight">Juan Carlos Duran Solorzano</h1>
-            {/* <p>Welcome!</p> */}
-            <p>
-              <Button
-                onClick={showModal}
-                className="ContactButton"
-                variant="warning"
-              >
-                Contact
-              </Button>
-            </p>{" "}
+            <h1 className="titleweight m-2">
+              Juan Carlos <br></br> Duran Solorzano
+            </h1>
+
+            {/* <Button
+              onClick={showModal}
+              className="ContactButton"
+              variant="warning"
+            >
+              Contact
+            </Button> */}
           </Bounce>
-        </Col>
-        <Col
-          className="headerIntro"
-          lg={6}
-          md={6}
-          sm={12}
-          xs={12}
-          style={{ textAlign: "end" }}
-        >
+
           <BounceLeft>
-            <h3 className="titleweight">
+            <h3 className="subTitleweight m-2">
               A showcase of my portfolio, here you will find a collection of all
               my experience, projects and achievements to date.{" "}
             </h3>
@@ -171,7 +163,7 @@ export default function Header() {
           />
         </div>{" "}
       </Container>
-      <Modal size="sm" show={show} onHide={handleClose}>
+      {/* <Modal size="sm" show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>
             <h1>Contact</h1>
@@ -179,7 +171,7 @@ export default function Header() {
         </Modal.Header>
         <ol>Email: Juank060790@gmail.com</ol>
         <ol>Phone: 0388595445</ol>
-      </Modal>{" "}
+      </Modal>{" "} */}
     </Jumbotron>
   );
 }
