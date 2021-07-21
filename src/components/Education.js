@@ -8,12 +8,12 @@ import logocss from "../img/css3-alt-brands.svg";
 import logonode from "../img/node-brands.svg";
 import logojs from "../img/js-brands.svg";
 import logowp from "../img/wordpress-simple-brands.svg";
-import logoad from "../img/adobe-brands.svg";
+import logoad from "../img/adobe_cloud.png";
 import "../App.css";
 
 export default function Education() {
   const BounceRight = styled.div`
-    animation: 5s ${keyframes`${fadeInRightBig}`};
+    animation: 2s ${keyframes`${fadeInRightBig}`};
   `;
   // const BounceLeft = styled.div`
   //   animation: 5s ${keyframes`${fadeInLeftBig}`};
@@ -33,18 +33,17 @@ export default function Education() {
           <Col lg={6} md={5}>
             <BounceRight>
               <p>
-                A creative who enjoys new challenges. I am constantly looking to
-                improve and learn different skills across a variety of fields.
-                Currently, I am developing, growing and building experience as a
-                full stack developer. Over the years I have worked for large
-                organisations, startups and started my own enterprises. My
-                ambition is to use these skills and combine them with my newest
-                passion: coding.
+                I am a junior full stack web developer, with one year experience
+                in HTML, CSS, Javascript, ReactJS, NodeJS, MongoDB, Figma,
+                Python and GCP. I am passionate about new technology and
+                programming languages. I always like to be researching new
+                technologies and keeping my knowledge updated with the latest
+                frameworks and trends in the programming world.
               </p>
               <img
                 src="https://i1.wp.com/juancaphotography.com/wp-content/uploads/2019/08/DSC04819-Editar.jpg?resize=768%2C512&ssl=1"
                 alt="portrait"
-                width="200px"
+                width="150px"
                 className="profileImg"
               />
             </BounceRight>

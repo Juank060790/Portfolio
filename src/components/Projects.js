@@ -1,16 +1,10 @@
 import React from "react";
-import {
-  Card,
-  Col,
-  Button,
-  // Modal,
-  Container,
-  Spinner,
-  Row,
-} from "react-bootstrap";
+import { Card, Col, Container, Spinner, Row } from "react-bootstrap";
 import { useState } from "react";
 import "../App.css";
 import { projectsDemo } from "../projects.constants";
+
+import projectTags from "./tags";
 
 export default function Projects() {
   // eslint-disable-next-line
@@ -36,13 +30,11 @@ export default function Projects() {
           Projects
         </h1>
       </div>
-      <Row
-        className="d-flex justify-content-center "
-        // style={{ textAlign: "center", margin: "auto" }}
-      >
+      <Row className="d-flex justify-content-center ">
         {projects.map((item) => {
           return (
             <Col
+              key={item.id}
               className="projectCard text-center d-flex"
               lg={4}
               md={6}
@@ -53,7 +45,6 @@ export default function Projects() {
                 style={{
                   width: "20rem",
                   height: "auto",
-                  backgroundColor: " #33b6e531",
                   marginBottom: "3rem",
                 }}
                 className=" projectsCol"
@@ -71,27 +62,16 @@ export default function Projects() {
                 <div className="mt-auto paddingButton">
                   <div md={12} style={{ textAlign: "center" }}>
                     {item.tags.map((tag) => {
-                      return (
-                        <span
-                          key={tag}
-                          className="badge badge-success "
-                          style={{ margin: "5px", color: "black" }}
-                        >
-                          {tag}
-                        </span>
-                      );
+                      return projectTags(tag);
                     })}
                   </div>
                   <a href={item.link} target="_new">
-                    <Button
-                      variant="warning"
-                      className="mouse-hover m-2"
-                      style={{ width: "40%", margin: "auto" }}
-                    >
-                      Try me!
-                    </Button>
+                    <div id="outer">
+                      <div className="button_slide slide_down">Try me!</div>
+                    </div>
                   </a>{" "}
                 </div>
+                <div></div>
               </Card>
             </Col>
           );

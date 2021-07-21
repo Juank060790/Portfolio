@@ -43,11 +43,9 @@ export default function Header() {
           </Bounce>
 
           <BounceLeft>
-            <h3 className="subTitleweight m-2">
-              <h2 className="m-1">Full Stack WebDeveloper</h2>
-              <br /> A showcase of my portfolio, here you will find a collection
-              of all my experience, projects and achievements to date.{" "}
-            </h3>
+            <h2 className="subTitleweight m-2 m-1">Full Stack WebDeveloper</h2>
+            <br /> A showcase of my live as a developer, here you will find a
+            collection of all my experience, projects and achievements to date.{" "}
           </BounceLeft>
         </Col>
         <div style={{ background: "none" }}>
