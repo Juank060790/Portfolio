@@ -6,7 +6,8 @@ export const projectsDemo = [
     link: "",
     tags: ["Reactjs", "Firebase", "GCP"],
     description:
-      "A user interface to access audio recordings files and view model predictions from GCP. ",
+      "A user interface to access audio recordings files, interact with spectrogram images and files management.",
+    status: "In progress",
   },
   {
     id: 1,
@@ -15,7 +16,7 @@ export const projectsDemo = [
     link: "https://mernshoeshop.netlify.app/",
     tags: ["Reactjs", "MongoDB", "Mongoose", "NodeJs"],
     description:
-      "A demo of an ecommerce using an external Api for the products, giving the chance to add into the shopping cart, and pay with differetn methods.",
+      "A demo of an ecommerce using an external Api for the products, giving the chance to add into the shopping cart, and pay with different methods.",
   },
   {
     id: 2,
@@ -34,6 +35,7 @@ export const projectsDemo = [
     tags: ["Reactjs", "MongoDB", "Mongoose", "NodeJs"],
     description:
       "I built this project for coderschool, to allow users to search, apply and contact new employers concerning their careers.",
+    status: "Not in server",
   },
   {
     id: 4,

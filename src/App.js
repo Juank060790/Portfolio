@@ -10,12 +10,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div
-      className="App"
-      data-spy="scroll"
-      data-target=".navbar-scroll"
-      data-offset="50"
-    >
+    <div className="App">
       <NavbarTop />
       <Header />
       <Projects />

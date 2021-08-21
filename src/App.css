@@ -1,16 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 
 body {
   font-family: "Roboto Slab", serif;
   letter-spacing: 1px;
+  font-weight: 300;
 }
 
 .titleweight {
   font-weight: 300;
-}
-
-.subTitleweight {
-  font-weight: 200;
 }
 
 html {
@@ -29,8 +27,40 @@ html {
   margin-bottom: 0px !important;
 }
 
+.social-header {
+  text-align: center;
+  font-size: 50px;
+}
+
+.header-social-icons {
+  margin: 10px;
+  color: #f5a523;
+  position: relative;
+  z-index: 1;
+}
+
+.header-social-icons:hover {
+  margin: 10px;
+  color: #dbdbda;
+  z-index: 1;
+  transform: scale(1.5);
+}
+
+.headerText {
+  font-family: "Staatliches";
+  letter-spacing: 10px;
+  z-index: 1;
+  text-align: center;
+  margin: auto;
+  font-size: 100px;
+}
+
+.headerSubTextInner {
+  margin: auto;
+}
+
 .profileImg {
-  border-radius: 30%;
+  opacity: 0.8;
 }
 
 p {
@@ -52,16 +82,20 @@ p {
 }
 
 .navbarMenu {
-  background-color: rgb(0, 0, 0);
+  position: relative;
+  z-index: 1;
+  background-color: #559ae92c;
+}
+
+.menulink:hover {
+  transform: scale(1.5);
+  text-decoration: #f5a523;
 }
 
 .navbar-light {
   margin: auto;
-}
-
-.bg-dark {
-  background-color: white;
-  transition: 250ms ease;
+  height: 40px;
+  align-items: center;
 }
 
 .ContactButton:hover {
@@ -71,14 +105,121 @@ p {
 .contact-icon {
   font-size: 60px;
   /* color: rgba(255, 204, 0, 0.947); */
-  color: #33b6e575;
+  color: #185516bd;
   margin: 20px;
 }
 
+/* Projects BG */
+
+.container-card {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-image {
+  width: 30%;
+}
+
+.project-text {
+  text-align: center;
+}
+.project-paragraph {
+  max-width: 30ch;
+  text-align: center;
+}
+
+.divisor {
+  width: 30%;
+  /* transform: rotate(90deg); */
+  margin: auto;
+  color: white;
+}
+
+#projects {
+  margin-top: 40%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Top */
+.custom-shape-divider-bottom-1629436742 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1629436742 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 323px;
+}
+
+.custom-shape-divider-bottom-1629436742 .shape-fill {
+  fill: #5599e9;
+}
+
+/* Botom */
+
+.custom-shape-divider-top-1629437491 {
+  position: absolute;
+  bottom: -220px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1629437491 svg {
+  position: relative;
+  display: block;
+  width: calc(208% + 1.3px);
+  height: 223px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1629437491 .shape-fill {
+  fill: #5599e9;
+}
+
 #footer {
+  color: rgb(46, 46, 46);
+  margin: auto;
+  background-color: #f5a523;
+  width: 100%;
+}
+
+.footerSection {
   padding: 20px;
-  /* background-image: radial-gradient(circle, #06060646 0%, #d2d0c82c 100%); */
-  background-color: rgb(44, 44, 44);
+}
+
+.footersvg {
+  position: static;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.footersvg svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 200px;
+}
+
+.footersvg .shape-fill {
+  fill: #f5a623;
 }
 
 .rowIcons {
@@ -91,6 +232,7 @@ p {
 /* Responsive query */
 
 .projectTitle {
+  font-family: "Staatliches";
   color: rgb(226, 224, 224);
   font-size: 40px;
   text-align: center;
@@ -127,13 +269,9 @@ p {
 
 @media (max-width: 800px) {
   .headerText {
-    flex-direction: column;
+    font-size: 60px;
   }
 
-  /* .logoFlexDirection {
-    flex-direction: column;
-    margin: auto;
-  } */
   .headerIntro {
     margin-top: 1rem;
   }
@@ -167,11 +305,29 @@ p {
   .alignLogos {
     margin: auto;
   }
+  .divisor {
+    width: 20%;
+    transform: rotate(180deg);
+    margin: 2rem;
+  }
+  .container-card {
+    margin-bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .project-image {
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
   .headerText {
     margin-top: 2rem;
+    font-size: 40px;
   }
 
   .projectsCol {
@@ -180,16 +336,18 @@ p {
 }
 
 .button_slide {
+  border-radius: 20px;
   margin-top: 10px;
-  color: rgb(28, 29, 28);
-  border: 2px solid rgb(214, 202, 28);
+  color: rgb(249, 249, 249);
+  border: 2px solid rgb(250, 193, 35);
   border-radius: 0px;
   padding: 10px 36px;
   display: inline-block;
   font-size: 12px;
+  font-weight: 400;
   letter-spacing: 1px;
   cursor: pointer;
-  box-shadow: inset 0 0 0 0 #d8b802;
+  box-shadow: inset 0 0 0 0 rgb(250, 193, 35);
   -webkit-transition: ease-out 0.3s;
   -moz-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
@@ -198,9 +356,44 @@ p {
 .slide_down:hover {
   color: white;
   box-shadow: inset 0 100px 0 0 #6d6d6c;
+  border-radius: 40px;
 }
 
 #outer {
   margin: auto;
   text-align: center;
+}
+
+.astro {
+  transform: rotate(-20deg);
+  opacity: 0.4;
+  width: 300px;
+  position: fixed;
+  top: 100px;
+  right: 0;
+}
+
+.rocket {
+  width: 25%;
+  opacity: 0.3;
+  position: relative;
+  top: 110px;
+}
+
+@media screen and (max-width: 600px) {
+  .rocket {
+    width: 25%;
+    opacity: 0.3;
+    position: relative;
+    top: 110px;
+    color: black;
+  }
+  .astro {
+    transform: rotate(-20deg);
+    opacity: 0.4;
+    width: 300px;
+    position: fixed;
+    top: 100px;
+    right: 0;
+  }
 }

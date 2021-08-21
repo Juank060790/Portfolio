@@ -1,7 +1,7 @@
 import React from "react";
 import { Jumbotron, Col, Container, Row } from "react-bootstrap";
-import styled, { keyframes } from "styled-components";
-import { fadeInRightBig } from "react-animations";
+// import styled, { keyframes } from "styled-components";
+// import { fadeInRightBig } from "react-animations";
 import logo from "../img/logo192.png";
 import logohtml from "../img/html5logo.svg";
 import logocss from "../img/css3-alt-brands.svg";
@@ -10,11 +10,11 @@ import logojs from "../img/js-brands.svg";
 import logowp from "../img/wordpress-simple-brands.svg";
 import logoad from "../img/adobe_cloud.png";
 import "../App.css";
-
+import toonPortrait from "../images/toonportrait.png";
 export default function Education() {
-  const BounceRight = styled.div`
-    animation: 2s ${keyframes`${fadeInRightBig}`};
-  `;
+  // const BounceRight = styled.div`
+  //   animation: 2s ${keyframes`${fadeInRightBig}`};
+  // `;
   // const BounceLeft = styled.div`
   //   animation: 5s ${keyframes`${fadeInLeftBig}`};
   // `;
@@ -31,7 +31,7 @@ export default function Education() {
       <Jumbotron id="education" style={{ background: "none" }}>
         <Container className="d-flex logoFlexDirection ">
           <Col lg={6} md={5}>
-            <BounceRight>
+            <div>
               <p>
                 I am a junior full stack web developer, with one year experience
                 in HTML, CSS, Javascript, ReactJS, NodeJS, MongoDB, Figma,
@@ -41,12 +41,12 @@ export default function Education() {
                 frameworks and trends in the programming world.
               </p>
               <img
-                src="https://i1.wp.com/juancaphotography.com/wp-content/uploads/2019/08/DSC04819-Editar.jpg?resize=768%2C512&ssl=1"
+                src={toonPortrait}
                 alt="portrait"
-                width="150px"
+                width="250px"
                 className="profileImg"
               />
-            </BounceRight>
+            </div>
           </Col>
 
           <div className="LogosSkills alignLogos">

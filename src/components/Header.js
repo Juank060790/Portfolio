@@ -1,9 +1,8 @@
 import React from "react";
-import { Jumbotron, Col, Container } from "react-bootstrap";
-import styled, { keyframes } from "styled-components";
-import { fadeInRightBig, fadeInLeftBig } from "react-animations";
-import Particles from "react-particles-js";
+import { Jumbotron, Container } from "react-bootstrap";
 
+import Particles from "react-particles-js";
+import astronout from "../images/astronaut-1.svg";
 import "../App.css";
 
 export default function Header() {
@@ -13,50 +12,54 @@ export default function Header() {
   // let [show, setShow] = useState(false);
   // const handleClose = () => setShow(false);
 
-  const Bounce = styled.div`
-    animation: 2s ${keyframes`${fadeInRightBig}`};
-  `;
-  const BounceLeft = styled.div`
-    animation: 2s ${keyframes`${fadeInLeftBig}`};
-  `;
-
   return (
     <Jumbotron
       className="jumbotron-margin"
       id="home"
       style={{ background: "none", minHeight: "40vh" }}
     >
-      <Container className="d-flex headerText ">
-        <Col lg={6} md={7} sm={12} xs={12}>
-          <Bounce>
-            <h1 className="titleweight m-2">
-              Juan Carlos <br></br> Duran Solorzano
-            </h1>
+      <Container>
+        <div>
+          <h1 className="headerText titleweight ">Full Stack Web Developer</h1>
 
-            {/* <Button
-              onClick={showModal}
-              className="ContactButton"
-              variant="warning"
+          <div className="social-header">
+            <a
+              href="https://www.instagram.com/photo_walk_worldwide/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Contact
-            </Button> */}
-          </Bounce>
+              <i className="fab fa-instagram header-social-icons insta-icon"></i>
+            </a>
 
-          <BounceLeft>
-            <h2 className="subTitleweight m-2 m-1">Full Stack WebDeveloper</h2>
-            <br /> A showcase of my live as a developer, here you will find a
-            collection of all my experience, projects and achievements to date.{" "}
-          </BounceLeft>
-        </Col>
+            <a
+              href="https://github.com/Juank060790"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-github header-social-icons github-icon"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/juan-carlos-duran-solorzano-132120152/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-linkedin header-social-icons linkedin-icon"></i>
+            </a>
+          </div>
+          {/* <br /> A showcase of my live as a developer, here you will find a
+            collection of all my experience, projects and achievements to date.{" "} */}
+        </div>
+        <img className="astro" src={astronout} alt="astro" />
         <div style={{ background: "none" }}>
           <Particles
+            id="tsparticles"
             style={{
               position: "absolute",
               top: 0,
               left: 0,
               width: "200px",
-              height: "200px",
-              maxHeight: "50vh",
+              // height: "200px",
+              maxHeight: "70vh",
             }}
             params={{
               particles: {
@@ -64,7 +67,7 @@ export default function Header() {
                   value: 80,
                   density: {
                     enable: true,
-                    value_area: 600,
+                    value_area: 2000,
                   },
                 },
                 color: {
@@ -94,14 +97,14 @@ export default function Header() {
                     enable: true,
                     speed: 12.181158184520175,
                     size_min: 0.1,
-                    sync: true,
+                    sync: false,
                   },
                 },
                 line_linked: {
                   enable: true,
                   distance: 150,
                   color: "#c8c8c8",
-                  opacity: 0.4,
+                  opacity: 0.1,
                   width: 1,
                 },
                 move: {
@@ -113,7 +116,7 @@ export default function Header() {
                   out_mode: "bounce",
                   bounce: false,
                   attract: {
-                    enable: false,
+                    enable: true,
                     rotateX: 600,
                     rotateY: 1200,
                   },
@@ -124,7 +127,7 @@ export default function Header() {
                 events: {
                   onhover: {
                     enable: true,
-                    mode: "grab",
+                    mode: "repulse",
                   },
                   onclick: {
                     enable: false,
@@ -141,10 +144,10 @@ export default function Header() {
                   },
                   bubble: {
                     distance: 400,
-                    size: 10,
-                    duration: 2,
-                    opacity: 8,
-                    speed: 3,
+                    size: 2,
+                    duration: 1,
+                    opacity: 2,
+                    speed: 6,
                   },
                   repulse: {
                     distance: 200,
