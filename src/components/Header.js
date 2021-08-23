@@ -6,11 +6,9 @@ import astronout from "../images/astronaut-1.svg";
 import "../App.css";
 
 export default function Header() {
-  // let showModal = () => {
-  //   setShow(true);
-  // };
-  // let [show, setShow] = useState(false);
-  // const handleClose = () => setShow(false);
+  // calculate the position on the screen of the astronaut\
+
+  // let astro = document.getElementById("astronaut");
 
   return (
     <Jumbotron
@@ -49,7 +47,9 @@ export default function Header() {
           {/* <br /> A showcase of my live as a developer, here you will find a
             collection of all my experience, projects and achievements to date.{" "} */}
         </div>
-        <img className="astro" src={astronout} alt="astro" />
+        <div id="astronaut" className="astro">
+          <img src={astronout} alt="astro" className="astro-img" />
+        </div>
         <div style={{ background: "none" }}>
           <Particles
             id="tsparticles"

@@ -15,7 +15,17 @@ html {
   scroll-behavior: smooth;
 }
 .App {
-  background-color: rgb(28, 28, 28);
+  /* background-color: rgb(28, 28, 28); */
+  background-image: linear-gradient(
+    to top,
+    #f5a523 0%,
+    #44c489 30%,
+    #28a9ae 46%,
+    #28a2b7 59%,
+    #4c7788 71%,
+    #6c4f63 86%,
+    #432c39 100%
+  );
   color: rgb(231, 230, 230);
   font-size: 18px;
   font-weight: 200;
@@ -140,7 +150,7 @@ p {
 }
 
 #projects {
-  margin-top: 40%;
+  margin-top: 15%;
   position: relative;
   z-index: 1;
 }
@@ -234,7 +244,7 @@ p {
 .projectTitle {
   font-family: "Staatliches";
   color: rgb(226, 224, 224);
-  font-size: 40px;
+  font-size: 130px;
   text-align: center;
 }
 
@@ -311,7 +321,7 @@ p {
     margin: 2rem;
   }
   .container-card {
-    margin-bottom: 300px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -367,10 +377,14 @@ p {
 .astro {
   transform: rotate(-20deg);
   opacity: 0.4;
-  width: 300px;
-  position: fixed;
-  top: 100px;
-  right: 0;
+  width: 250px;
+  position: absolute;
+  top: 45%;
+  right: 25%;
+}
+
+.astro-img {
+  width: 100%;
 }
 
 .rocket {
@@ -378,6 +392,32 @@ p {
   opacity: 0.3;
   position: relative;
   top: 110px;
+}
+
+/* Paper plane anination and container */
+/* .animation-container {
+  position: absolute;
+
+  right: 10;
+  z-index: 1;
+  width: 100%;
+} */
+
+.animation {
+  z-index: 0;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  height: 50vh;
+  padding-bottom: none !important;
+}
+
+.paper-plane {
+  position: absolute;
+  width: 10.5rem;
+  top: 60%;
+  left: -10.5rem;
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 600px) {
@@ -391,7 +431,7 @@ p {
   .astro {
     transform: rotate(-20deg);
     opacity: 0.4;
-    width: 300px;
+    width: 100px;
     position: fixed;
     top: 100px;
     right: 0;

@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <>
       <img src={rocket} alt="rocket" className="rocket" />
-      <div className="footersvg">
+      <div className="footersvg ">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ const Footer = () => {
           ></path>
         </svg>
       </div>
-      <div id="footer" className="layer1 footer-bg  ">
+      <div id="footer" className="layer1 footer-bg footergradient ">
         <Container fluid className="container footer-container">
           <div className="d-flex footerSection">
             <Col lg={6} md={6} sm={8} className="ContactiInfo">

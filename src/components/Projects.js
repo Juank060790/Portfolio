@@ -1,27 +1,71 @@
-import React from "react";
-import { Container, Spinner } from "react-bootstrap";
-import { useState } from "react";
+import React, { useEffect } from "react";
+import { Container } from "react-bootstrap";
+import { useState, useRef } from "react";
 import "../App.css";
 import { projectsDemo } from "../projects.constants";
 import divisor from "../images/ShapesDivider.svg";
 import projectTags from "./tags";
+import paperplane from "../images/paperplane-edit.png";
+import { gsap } from "gsap";
+import { MotionPathPlugin } from "gsap/all";
+import ScrollMagic from "scrollmagic";
+import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
+ScrollMagicPluginGsap(ScrollMagic, gsap);
 
 export default function Projects() {
   // eslint-disable-next-line
   let [projects, setProjects] = useState(projectsDemo);
+  let paperPlane = useRef("paperPlane");
+  let paperPlaneAnimation = useRef(null);
 
-  if (projects.length === 0) {
-    return (
-      <Spinner
-        animation="grow"
-        variant="warning"
-        style={{ marginLeft: "50%" }}
-      />
-    );
-  }
+  useEffect(() => {
+    gsap.registerPlugin(MotionPathPlugin);
+    var tween = gsap.timeline();
+    var plane = tween.to(paperPlane.current, {
+      duration: 4,
+      ease: "power1.inOut",
+      motionPath: {
+        path: [
+          { x: window.innerWidth / 8, y: -20 },
+          { x: (window.innerWidth / 8) * 2, y: 10 },
+          { x: (window.innerWidth / 8) * 3, y: 100 },
+          { x: (window.innerWidth / 8) * 4, y: -100 },
+          { x: (window.innerWidth / 8) * 3, y: -50 },
+          { x: (window.innerWidth / 8) * 5, y: -30 },
+          { x: (window.innerWidth / 8) * 6, y: -20 },
+          { x: window.innerWidth + 150, y: 100 },
+        ],
+        autoRotate: true,
+        // curviness: 1.5,
+      },
+    });
+
+    console.log(`plane`, plane);
+
+    const controller = new ScrollMagic.Controller();
+    console.log(`controller`, controller);
+    const scene = new ScrollMagic.Scene({
+      triggerElement: ".animation",
+      duration: 3000,
+      triggerHook: 0.1,
+    })
+      .setTween(tween)
+      .setPin(".animation", { pushFollowers: false })
+      .addTo(controller);
+
+    console.log(`scene`, scene);
+  }, [paperPlane]);
 
   return (
     <>
+      <Container fluid className="animation" ref={paperPlaneAnimation}>
+        <img
+          src={paperplane}
+          alt="plane"
+          ref={paperPlane}
+          className="paper-plane"
+        />
+      </Container>
       <div className="custom-shape-divider-bottom-1629436742">
         <svg
           data-name="Layer 1"
@@ -80,7 +124,7 @@ export default function Projects() {
         </div>
         {projects.map((item) => {
           return (
-            <>
+            <div key={item.id}>
               {item.id % 2 === 0 ? (
                 <Container className="container-card">
                   <img
@@ -139,7 +183,7 @@ export default function Projects() {
                   />
                 </Container>
               )}
-            </>
+            </div>
           );
         })}
 
