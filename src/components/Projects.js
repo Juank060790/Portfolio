@@ -5,7 +5,7 @@ import "../App.css";
 import { projectsDemo } from "../projects.constants";
 import divisor from "../images/ShapesDivider.svg";
 import projectTags from "./tags";
-import paperplane from "../images/paperplane-edit.png";
+import paperplane from "../images/paperplane-red.png";
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/all";
 import ScrollMagic from "scrollmagic";

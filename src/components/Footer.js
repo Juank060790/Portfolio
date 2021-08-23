@@ -2,12 +2,12 @@ import React from "react";
 
 import "../App.css";
 import { Container, Col } from "react-bootstrap";
-import rocket from "../images/Rocket.gif";
+import rocket from "../images/rocket-nobg.gif";
 
 const Footer = () => {
   return (
     <>
-      <img src={rocket} alt="rocket" className="rocket" />
+      <img src={rocket} alt="rocket" className="rocket-footer" />
       <div className="footersvg ">
         <svg
           data-name="Layer 1"

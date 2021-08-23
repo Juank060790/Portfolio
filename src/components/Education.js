@@ -83,12 +83,12 @@ export default function Education() {
                 style={{ width: "70px" }}
               />
             </div>
-            <div className="alignLogos">
+            <div className="alignLogos node-container">
               <img
-                className="logoSkills"
+                className="logoSkills nodelogo"
                 src={logonode}
                 alt="NodeJS"
-                style={{ width: "70px" }}
+                style={{ width: "70px", height: "70px" }}
               />
             </div>
             <div className="alignLogos">

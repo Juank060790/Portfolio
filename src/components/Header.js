@@ -4,18 +4,17 @@ import { Jumbotron, Container } from "react-bootstrap";
 import Particles from "react-particles-js";
 import astronout from "../images/astronaut-1.svg";
 import "../App.css";
+import Moon from "./Moon";
 
 export default function Header() {
-  // calculate the position on the screen of the astronaut\
-
-  // let astro = document.getElementById("astronaut");
-
   return (
     <Jumbotron
       className="jumbotron-margin"
       id="home"
       style={{ background: "none", minHeight: "40vh" }}
     >
+      <Moon />
+
       <Container>
         <div>
           <h1 className="headerText titleweight ">Full Stack Web Developer</h1>
