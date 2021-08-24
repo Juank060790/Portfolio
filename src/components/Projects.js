@@ -12,12 +12,152 @@ import ScrollMagic from "scrollmagic";
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 ScrollMagicPluginGsap(ScrollMagic, gsap);
 
-export default function Projects() {
+// Get dimensions of the browser window
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+}
+
+function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowDimensions;
+}
+
+// Projects component
+
+const Projects = () => {
   // eslint-disable-next-line
   let [projects, setProjects] = useState(projectsDemo);
   let paperPlane = useRef("paperPlane");
   let paperPlaneAnimation = useRef(null);
 
+  const { width } = useWindowDimensions();
+
+  const ProjectsData = () => {
+    if (width > 900) {
+      return (
+        <div className="projects-container">
+          {projects.map((item) => {
+            return (
+              <div key={item.id}>
+                {item.id % 2 === 0 ? (
+                  <Container className="container-card">
+                    <img
+                      className="project-image"
+                      src={item.img}
+                      alt="project"
+                      width="100%"
+                    />
+
+                    <img className="divisor" src={divisor} alt="divisor" />
+
+                    <div className="project-text">
+                      <h2>{item.title}</h2>
+                      <p className="project-text project-paragraph">
+                        {item.description}
+                        <br />
+                        {item.tags.map((tag) => {
+                          return projectTags(tag);
+                        })}
+                      </p>
+                      <a href={item.link} target="_new">
+                        <div id="outer">
+                          <div className="button_slide slide_down">
+                            {item.status ? item.status : "Try me"}!
+                          </div>
+                        </div>
+                      </a>{" "}
+                    </div>
+                  </Container>
+                ) : (
+                  <Container className="container-card">
+                    <div className="project-text">
+                      <h2>{item.title}</h2>
+                      <p className="project-text project-paragraph">
+                        {item.description}
+                        <br />
+                        {item.tags.map((tag) => {
+                          return projectTags(tag);
+                        })}
+                      </p>
+                      <a href={item.link} target="_new">
+                        <div id="outer">
+                          <div className="button_slide slide_down">
+                            {item.status ? item.status : "Try me"}!
+                          </div>
+                        </div>
+                      </a>{" "}
+                    </div>
+
+                    <img className="divisor" src={divisor} alt="divisor" />
+                    <img
+                      className="project-image"
+                      src={item.img}
+                      alt="project"
+                      width="100%"
+                    />
+                  </Container>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          {" "}
+          {projects.map((item) => {
+            return (
+              <Container className="container-card">
+                <img
+                  className="project-image"
+                  src={item.img}
+                  alt="project"
+                  width="100%"
+                />
+
+                <img className="divisor" src={divisor} alt="divisor" />
+
+                <div className="project-text">
+                  <h2>{item.title}</h2>
+                  <p className="project-text project-paragraph">
+                    {item.description}
+                    <br />
+                    {item.tags.map((tag) => {
+                      return projectTags(tag);
+                    })}
+                  </p>
+                  <a href={item.link} target="_new">
+                    <div id="outer">
+                      <div className="button_slide slide_down">
+                        {item.status ? item.status : "Try me"}!
+                      </div>
+                    </div>
+                  </a>{" "}
+                </div>
+              </Container>
+            );
+          })}
+        </div>
+      );
+    }
+  };
   useEffect(() => {
     gsap.registerPlugin(MotionPathPlugin);
     var tween = gsap.timeline();
@@ -122,70 +262,8 @@ export default function Projects() {
             Experience
           </h1>
         </div>
-        {projects.map((item) => {
-          return (
-            <div key={item.id}>
-              {item.id % 2 === 0 ? (
-                <Container className="container-card">
-                  <img
-                    className="project-image"
-                    src={item.img}
-                    alt="project"
-                    width="100%"
-                  />
 
-                  <img className="divisor" src={divisor} alt="divisor" />
-
-                  <div className="project-text">
-                    <h2>{item.title}</h2>
-                    <p className="project-text project-paragraph">
-                      {item.description}
-                      <br />
-                      {item.tags.map((tag) => {
-                        return projectTags(tag);
-                      })}
-                    </p>
-                    <a href={item.link} target="_new">
-                      <div id="outer">
-                        <div className="button_slide slide_down">
-                          {item.status ? item.status : "Try me"}!
-                        </div>
-                      </div>
-                    </a>{" "}
-                  </div>
-                </Container>
-              ) : (
-                <Container className="container-card">
-                  <div className="project-text">
-                    <h2>{item.title}</h2>
-                    <p className="project-text project-paragraph">
-                      {item.description}
-                      <br />
-                      {item.tags.map((tag) => {
-                        return projectTags(tag);
-                      })}
-                    </p>
-                    <a href={item.link} target="_new">
-                      <div id="outer">
-                        <div className="button_slide slide_down">
-                          {item.status ? item.status : "Try me"}!
-                        </div>
-                      </div>
-                    </a>{" "}
-                  </div>
-
-                  <img className="divisor" src={divisor} alt="divisor" />
-                  <img
-                    className="project-image"
-                    src={item.img}
-                    alt="project"
-                    width="100%"
-                  />
-                </Container>
-              )}
-            </div>
-          );
-        })}
+        <ProjectsData />
 
         {/* <Row className="d-flex justify-content-center ">
           {projects.map((item) => {
@@ -239,4 +317,5 @@ export default function Projects() {
       </Container>
     </>
   );
-}
+};
+export default Projects;

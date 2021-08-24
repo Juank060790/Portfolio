@@ -6,7 +6,7 @@ import astronout from "../images/astronaut-1.svg";
 import "../App.css";
 import Moon from "./Moon";
 
-export default function Header() {
+const Header = () => {
   return (
     <Jumbotron
       className="jumbotron-margin"
@@ -175,4 +175,6 @@ export default function Header() {
       </Modal>{" "} */}
     </Jumbotron>
   );
-}
+};
+
+export default Header;

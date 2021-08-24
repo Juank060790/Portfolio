@@ -30,9 +30,16 @@ export const projectTags = (tag) => {
   } else if (tag === "NodeJs") {
     return (
       <img
+        className="logoSkills nodelogo"
         src={logonode}
         key={tag}
-        style={{ width: "40px", margin: "5px", color: "black" }}
+        style={{
+          width: "40px",
+          height: "40px",
+          margin: "5px",
+          backgroundColor: "rgb(28,28,28, 0.8)",
+          borderRadius: "50%",
+        }}
         alt=""
       ></img>
     );
