@@ -21,14 +21,6 @@ const Header = () => {
 
           <div className="social-header">
             <a
-              href="https://www.instagram.com/photo_walk_worldwide/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-instagram header-social-icons insta-icon"></i>
-            </a>
-
-            <a
               href="https://github.com/Juank060790"
               target="_blank"
               rel="noopener noreferrer"
@@ -41,6 +33,13 @@ const Header = () => {
               rel="noopener noreferrer"
             >
               <i className="fab fa-linkedin header-social-icons linkedin-icon"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/photo_walk_worldwide/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-instagram header-social-icons insta-icon"></i>
             </a>
           </div>
           {/* <br /> A showcase of my live as a developer, here you will find a

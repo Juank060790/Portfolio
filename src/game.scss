@@ -1,0 +1,329 @@
+// .board {
+//   width: 30%;
+// }
+
+// .t svg {
+//   display: block;
+// }
+// .t use {
+//   transition: 0.5s;
+// }
+// .t:not(.revealed) use {
+//   fill: darken(#926ea9, 10);
+// }
+
+// use {
+//   stroke: wheat;
+// }
+// .revealed use {
+//   stroke: transparent;
+// }
+
+// .board {
+//   max-width: 75vh;
+//   margin: 0 auto;
+//   display: grid;
+//   grid-gap: 0.5rem;
+//   grid-template-columns: repeat(4, 1fr);
+//   grid-auto-rows: 1fr;
+// }
+// .t {
+//   border: 1px solid;
+// }
+
+// .revealed {
+//   background: white;
+//   border-color: white;
+// }
+
+// .t {
+//   .bt-1 {
+//     transform: translate(0, 0);
+//   }
+//   .bt-2 {
+//     transform: translate(0, 0) scale(-1, 1) rotate(90deg);
+//   }
+//   .st-1 {
+//     transform: translate(25px, 75px) scale(0.5, 0.5) rotate(-90deg);
+//   }
+//   .mt {
+//     transform: translate(100px, 49.5px) scale(0.7142, 0.7142) rotate(45deg);
+//   }
+//   .st-2 {
+//     transform: translate(100px, 50px) scale(0.5, 0.5) rotate(-180deg);
+//   }
+//   .sq {
+//   }
+//   .rh {
+//   }
+// }
+
+// .tcat.revealed {
+//   svg {
+//     transform: translate(0, 8px);
+//   }
+//   .bt-1 {
+//     transform: translate(12.5px, 10px);
+//     fill: #3d3d3d;
+//   }
+//   .bt-2 {
+//     transform: translate(-8.5px, 130px) scale(-1, 1) rotate(135deg);
+//     fill: #666666;
+//   }
+//   .st-1 {
+//     transform: translate(25px, 0px) scale(0.5, 0.5) rotate(180deg);
+//   }
+//   .st-2 {
+//     transform: translate(-25px, -50px) scale(0.5, 0.5) rotate(0deg);
+//   }
+//   .st-1,
+//   .st-2 {
+//     fill: #ffe6c5;
+//   }
+//   .mt {
+//     transform: translate(12.5px, 12.5px) scale(-0.7142, 0.7142) rotate(0deg);
+//   }
+//   .mt,
+//   .rh {
+//     fill: #cccccc;
+//   }
+//   .sq {
+//     transform: translate(-75px, -50px);
+//     fill: #303030;
+//   }
+//   .rh {
+//     transform: translate(133px, 200px) scale(1, -1) rotate(45deg);
+//   }
+// }
+
+// .tsquirrel.revealed {
+//   svg {
+//     transform: translate(0, 12px);
+//   }
+//   .bt-1 {
+//     transform: translate(12.5px, -12.5px);
+//     fill: #6b3010;
+//   }
+//   .bt-2 {
+//     transform: translate(-8.5px, 108.5px) scale(-1, 1) rotate(135deg);
+//     fill: #7f381c;
+//   }
+//   .st-1 {
+//     transform: translate(12.5px, 87.5px) scale(0.5, 0.5) rotate(180deg);
+//   }
+//   .st-2 {
+//     transform: translate(97.5px, 108.5px) scale(0.5, 0.5) rotate(135deg);
+//   }
+//   .mt {
+//     transform: translate(12.5px, -35px) scale(0.7142, 0.7142) rotate(45deg);
+//   }
+//   .sq {
+//     transform: translate(22.5px, -16.5px);
+//     fill: #e6e6e6;
+//   }
+//   .rh {
+//     transform: translate(172.5px, 33.25px) scale(1, 1) rotate(90deg);
+//     fill: #7f381c;
+//   }
+//   .st-1,
+//   .st-2,
+//   .mt {
+//     fill: #8c6239;
+//   }
+// }
+
+// .theart.revealed {
+//   .bt-1 {
+//     transform: translate(-25px, 50px) rotate(-90deg);
+//     fill: #d4145a;
+//   }
+//   .bt-2 {
+//     transform: translate(25px, 50px) scale(-1, 1) rotate(90deg);
+//     fill: #c1272d;
+//   }
+//   .st-1 {
+//     transform: translate(50px, 25px) scale(0.5, 0.5) rotate(-90deg);
+//     fill: #9e005d;
+//   }
+//   .st-2 {
+//     transform: translate(25px, 50px) scale(0.5, 0.5) rotate(0deg);
+//     fill: darken(#ed1c24, 6);
+//   }
+//   .mt {
+//     transform: translate(-25px, 50px) scale(0.7142, 0.7142) rotate(-45deg);
+//     fill: #ed1c24;
+//   }
+//   .sq {
+//     transform: translate(-25px, 50px);
+//     fill: lighten(#c1272d, 1);
+//   }
+//   .rh {
+//     transform: translate(50px, 125px) scale(1, -1) rotate(0deg);
+//     fill: #d4145a;
+//   }
+// }
+
+// .trocket.revealed {
+//   .bt-1 {
+//     transform: translate(75px, 75px) rotate(-180deg);
+//     fill: #ed1c24;
+//   }
+//   .bt-2 {
+//     transform: translate(75px, 75px) scale(-1, 1) rotate(180deg);
+//     fill: #c1272d;
+//   }
+//   .st-1 {
+//     transform: translate(-37.5px, 62.5px) scale(0.5, 0.5) rotate(-90deg);
+//     fill: #fbb03b;
+//   }
+//   .st-2 {
+//     transform: translate(37.5px, 37.5px) scale(0.5, 0.5) rotate(90deg);
+//     fill: #bdccd4;
+//   }
+//   .mt {
+//     transform: translate(125px, 25px) scale(-0.7142, 0.7142) rotate(-135deg);
+//     fill: #e6e6e6;
+//   }
+//   .sq {
+//     transform: translate(-37.5px, 12.5px);
+//     fill: #4d4d4d;
+//   }
+//   .rh {
+//     transform: translate(137px, 137px) scale(1, -1) rotate(90deg);
+//     fill: #fbb03b;
+//   }
+// }
+
+// .tbird.revealed {
+//   .bt-1 {
+//     transform: translate(72.5px, -25px) rotate(45deg);
+//     fill: #d5abd8;
+//   }
+//   .bt-2 {
+//     transform: translate(72.5px, 45.5px) scale(1, 1) rotate(-135deg);
+//     fill: #d889db;
+//   }
+//   .st-1 {
+//     transform: translate(1.5px, 45.5px) scale(0.5, 0.5) rotate(-45deg);
+//     fill: #e6e6e6;
+//   }
+//   .st-2 {
+//     transform: translate(2px, -25px) scale(0.5, 0.5) rotate(45deg);
+//     fill: #fbb03b;
+//   }
+//   .mt {
+//     transform: translate(2px, -26px) scale(0.7142, 0.7142) rotate(0deg);
+//     fill: #d29e98;
+//   }
+//   .sq {
+//     transform: translate(36.5px, -25px) rotate(45deg);
+//     fill: #e6e6e6;
+//   }
+//   .rh {
+//     transform: translate(107px, 10px) scale(1, 1) rotate(45deg);
+//     fill: #f2b1b7;
+//   }
+// }
+
+// .thome.revealed {
+//   .bt-1 {
+//     transform: translate(25px, 66.5px) rotate(-90deg);
+//     fill: #d54d1d;
+//   }
+//   .bt-2 {
+//     transform: translate(0px, 116.5px) scale(1, 1) rotate(-90deg);
+//     fill: #f8cc88;
+//   }
+//   .st-1 {
+//     transform: translate(100px, 66.5px) scale(0.5, 0.5) rotate(90deg);
+//     fill: #fbe098;
+//   }
+//   .st-2 {
+//     transform: translate(100px, 116.5px) scale(0.5, 0.5) rotate(180deg);
+//     fill: #f8cc88;
+//   }
+//   .mt {
+//     transform: translate(50px, 66.5px) scale(-0.7142, 0.7142) rotate(-45deg);
+//     fill: #fbe098;
+//   }
+//   .sq {
+//     transform: translate(25px, -75px) rotate(45deg);
+//     fill: #e6e6e6;
+//   }
+//   .rh {
+//     transform: translate(61px, 137px) scale(1, -1) rotate(45deg);
+//     fill: #e9624e;
+//   }
+// }
+
+// .tlotus.revealed {
+//   .bt-1 {
+//     transform: translate(50px, 85.5px) rotate(135deg);
+//     fill: #cddc39;
+//   }
+//   .bt-2 {
+//     transform: translate(121.5px, 14.5px) scale(1, 1) rotate(45deg);
+//     fill: #8bc34a;
+//   }
+//   .st-1 {
+//     transform: translate(50px, 50px) scale(0.5, 0.5) rotate(135deg);
+//     fill: #d889db;
+//   }
+//   .mt {
+//     transform: translate(86px, 50px) scale(0.7142, 0.7142) rotate(90deg);
+//     fill: #4caf50;
+//   }
+//   .st-2 {
+//     transform: translate(50px, 50px) scale(-0.5, 0.5) rotate(135deg);
+//     fill: #f2b1b7;
+//   }
+//   .sq {
+//     transform: translate(-25px, -25px);
+//     fill: #de5e87;
+//   }
+//   .rh {
+//     transform: translate(121px, 14.5px) rotate(45deg);
+//     fill: #009688;
+//   }
+// }
+// .tboat.revealed {
+//   .bt-1 {
+//     transform: translate(50px, 12.5px) rotate(45deg);
+//     fill: #eeeeee;
+//   }
+//   .bt-2 {
+//     transform: translate(50px, 0) scale(1, 1) rotate(0deg);
+//     fill: #dddddd;
+//   }
+//   .st-1 {
+//     transform: translate(50px, 100px) scale(0.5, 0.5) rotate(-90deg);
+//     fill: #ededed;
+//   }
+//   .mt {
+//     transform: translate(100px, 100px) scale(0.7142, 0.7142) rotate(90deg);
+//     fill: #795548;
+//   }
+//   .st-2 {
+//     transform: translate(85px, 0px) scale(0.5, 0.5) rotate(135deg);
+//     fill: #d27373;
+//   }
+//   .sq {
+//     transform: translate(25px, 25px);
+//     fill: #c7c4c4;
+//   }
+//   .rh {
+//     transform: translate(64px, 29.5px) rotate(45deg);
+//     fill: darken(#795548, 10);
+//   }
+// }
+
+// .t {
+//   transition: opacity 0.75s 0.75s, background 0.5s;
+//   cursor: pointer;
+//   opacity: 1;
+// }
+
+// .hidden {
+//   cursor: auto;
+//   opacity: 0.5;
+// }

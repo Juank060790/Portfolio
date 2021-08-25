@@ -12,6 +12,7 @@ import logoad from "../img/adobe_cloud.png";
 import "../App.css";
 import toonPortrait from "../images/toonportrait.png";
 import "../birds.scss";
+// import Game from "./Game";
 
 export default function Education() {
   // const BounceRight = styled.div`
@@ -53,18 +54,19 @@ export default function Education() {
             <div className="">
               <ul>
                 <li className="educationText educationList">
-                  <i class="educationIcon fas fa-dot-circle"></i>A junior full
-                  stack web developer, with one year experience in HTML, CSS,
-                  Javascript, ReactJS, NodeJS, MongoDB, Figma, Python and GCP.
+                  <i className="educationIcon fas fa-dot-circle"></i>A junior
+                  full stack web developer, with one year experience in HTML,
+                  CSS, Javascript, ReactJS, NodeJS, MongoDB, Figma, Python and
+                  GCP.
                 </li>
                 <li className="educationText educationList">
-                  <i class="educationIcon fas fa-dot-circle"></i>Passionate
+                  <i className="educationIcon fas fa-dot-circle"></i>Passionate
                   about new technology and programming languages.
                 </li>
                 <li className="educationText educationList">
-                  <i class="educationIcon fas fa-dot-circle"></i> I always like
-                  to be researching new technologies and keeping my knowledge
-                  updated with the latest frameworks and trends in the
+                  <i className="educationIcon fas fa-dot-circle"></i> I always
+                  like to be researching new technologies and keeping my
+                  knowledge updated with the latest frameworks and trends in the
                   programming world.
                 </li>
               </ul>
@@ -147,6 +149,7 @@ export default function Education() {
             </div>
           </div>
         </Container>
+        {/* <Game /> */}
       </Jumbotron>
     </>
   );

@@ -161,6 +161,7 @@
 
 @media (max-width: 800px) {
   .bird-container {
+    left: -23%;
     &--one {
       animation-duration: 7.5s;
       animation-delay: 0;
@@ -168,17 +169,17 @@
 
     &--two {
       animation-duration: 8s;
-      animation-delay: 1s;
+      animation-delay: 0.5s;
     }
 
     &--three {
       animation-duration: 7.3s;
-      animation-delay: 9.5s;
+      animation-delay: 4.5s;
     }
 
     &--four {
       animation-duration: 8s;
-      animation-delay: 10.25s;
+      animation-delay: 3.25s;
     }
   }
 }
