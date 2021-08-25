@@ -28,6 +28,7 @@
     "react-scripts": "3.4.1",
     "react-spinners": "^0.9.0",
     "react-tsparticles": "^1.33.3",
+    "sass": "^1.38.1",
     "scrollmagic": "^2.0.8",
     "scrollmagic-plugin-gsap": "^1.0.4",
     "styled-components": "^5.1.1"

@@ -164,15 +164,6 @@ const Header = () => {
           />
         </div>{" "}
       </Container>
-      {/* <Modal size="sm" show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>
-            <h1>Contact</h1>
-          </Modal.Title>
-        </Modal.Header>
-        <ol>Email: Juank060790@gmail.com</ol>
-        <ol>Phone: 0388595445</ol>
-      </Modal>{" "} */}
     </Jumbotron>
   );
 };

@@ -124,7 +124,7 @@ const Projects = () => {
           {" "}
           {projects.map((item) => {
             return (
-              <Container className="container-card">
+              <Container key={item.id} className="container-card">
                 <img
                   className="project-image"
                   src={item.img}
@@ -161,7 +161,7 @@ const Projects = () => {
   useEffect(() => {
     gsap.registerPlugin(MotionPathPlugin);
     var tween = gsap.timeline();
-    var plane = tween.to(paperPlane.current, {
+    tween.to(paperPlane.current, {
       duration: 4,
       ease: "power1.inOut",
       motionPath: {
@@ -172,19 +172,17 @@ const Projects = () => {
           { x: (window.innerWidth / 8) * 4, y: -100 },
           { x: (window.innerWidth / 8) * 3, y: -50 },
           { x: (window.innerWidth / 8) * 5, y: -30 },
-          { x: (window.innerWidth / 8) * 6, y: -20 },
-          { x: window.innerWidth + 150, y: 100 },
+          { x: (window.innerWidth / 8) * 6, y: -200 },
+          { x: window.innerWidth + 150, y: -250 },
         ],
         autoRotate: true,
         // curviness: 1.5,
       },
     });
 
-    console.log(`plane`, plane);
-
     const controller = new ScrollMagic.Controller();
-    console.log(`controller`, controller);
-    const scene = new ScrollMagic.Scene({
+
+    new ScrollMagic.Scene({
       triggerElement: ".animation",
       duration: 3000,
       triggerHook: 0.1,
@@ -192,8 +190,6 @@ const Projects = () => {
       .setTween(tween)
       .setPin(".animation", { pushFollowers: false })
       .addTo(controller);
-
-    console.log(`scene`, scene);
   }, [paperPlane]);
 
   return (
@@ -206,6 +202,7 @@ const Projects = () => {
           className="paper-plane"
         />
       </Container>
+
       <div className="custom-shape-divider-bottom-1629436742">
         <svg
           data-name="Layer 1"
@@ -231,6 +228,7 @@ const Projects = () => {
       </div>
       <div className="custom-shape-divider-top-1629437491">
         <svg
+          className="dividerWave"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"

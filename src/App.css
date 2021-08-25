@@ -177,6 +177,22 @@ p {
   fill: #5599e9;
 }
 
+/* Education */
+
+.educationList {
+  list-style: none;
+}
+
+.educationIcon {
+  margin-right: 20px;
+  color: #6c4f63;
+}
+
+.educationText {
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 300;
+}
 /* Botom */
 
 .custom-shape-divider-top-1629437491 {
@@ -198,6 +214,7 @@ p {
 
 .custom-shape-divider-top-1629437491 .shape-fill {
   fill: #5599e9;
+  width: 50%;
 }
 
 #footer {
@@ -356,6 +373,12 @@ p {
   .projectsCol {
     width: 100% !important;
   }
+
+  .divisor {
+    width: 20%;
+    transform: rotate(180deg);
+    margin: 2rem;
+  }
 }
 
 .button_slide {
@@ -444,11 +467,6 @@ p {
   .astro {
     visibility: hidden;
     transform: rotate(-20deg);
-    opacity: 0.4;
-    width: 70px;
-    position: absolute;
-    top: 250px;
-    right: 0;
   }
 }
 

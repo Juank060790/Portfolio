@@ -11,6 +11,8 @@ import logowp from "../img/wordpress-simple-brands.svg";
 import logoad from "../img/adobe_cloud.png";
 import "../App.css";
 import toonPortrait from "../images/toonportrait.png";
+import "../birds.scss";
+
 export default function Education() {
   // const BounceRight = styled.div`
   //   animation: 2s ${keyframes`${fadeInRightBig}`};
@@ -21,25 +23,60 @@ export default function Education() {
 
   return (
     <>
-      <Container>
+      <Container fluid>
         <Row>
           <Col lg={12} md={12}>
-            <h3 className="projectTitle">Who am I? & Skills </h3>
+            <Container fluid className="containerbirds">
+              <h3 className="projectTitle">Who am I? & Skills </h3>
+              <div className="bird-container bird-container--one">
+                <div className="bird bird--one"></div>
+              </div>
+
+              <div className="bird-container bird-container--two">
+                <div className="bird bird--two"></div>
+              </div>
+
+              <div className="bird-container bird-container--three">
+                <div className="bird bird--three"></div>
+              </div>
+
+              <div className="bird-container bird-container--four">
+                <div className="bird bird--four"></div>
+              </div>
+            </Container>
           </Col>
         </Row>
       </Container>
       <Jumbotron id="education" style={{ background: "none" }}>
         <Container className="d-flex logoFlexDirection ">
           <Col lg={6} md={5}>
-            <div>
-              <p>
+            <div className="">
+              <ul>
+                <li className="educationText educationList">
+                  <i class="educationIcon fas fa-dot-circle"></i>A junior full
+                  stack web developer, with one year experience in HTML, CSS,
+                  Javascript, ReactJS, NodeJS, MongoDB, Figma, Python and GCP.
+                </li>
+                <li className="educationText educationList">
+                  <i class="educationIcon fas fa-dot-circle"></i>Passionate
+                  about new technology and programming languages.
+                </li>
+                <li className="educationText educationList">
+                  <i class="educationIcon fas fa-dot-circle"></i> I always like
+                  to be researching new technologies and keeping my knowledge
+                  updated with the latest frameworks and trends in the
+                  programming world.
+                </li>
+              </ul>
+
+              {/* <p>
                 I am a junior full stack web developer, with one year experience
                 in HTML, CSS, Javascript, ReactJS, NodeJS, MongoDB, Figma,
                 Python and GCP. I am passionate about new technology and
                 programming languages. I always like to be researching new
                 technologies and keeping my knowledge updated with the latest
                 frameworks and trends in the programming world.
-              </p>
+              </p> */}
               <img
                 src={toonPortrait}
                 alt="portrait"
