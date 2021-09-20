@@ -1,3 +1,5 @@
+import grabGameImg from "../src/images/grab-game.jpeg";
+
 export const projectsDemo = [
   {
     id: 0,
@@ -34,7 +36,7 @@ export const projectsDemo = [
     link: "https://jobfair2020.coderschool.vn/",
     tags: ["Reactjs", "MongoDB", "Mongoose", "NodeJs"],
     description:
-      "I built this project for coderschool, to allow users to search, apply and contact new employers concerning their careers.",
+      "I built this project for coderschool in 2020, to allow users to search, apply and contact new employers concerning their careers. As this project was only for specific season is not published.",
     status: "Not in server",
   },
   {
@@ -48,7 +50,7 @@ export const projectsDemo = [
   },
   {
     id: 5,
-    img: "https://res.cloudinary.com/juankspw/image/upload/v1607408574/zckxccudtqi6gpqpitpo.png",
+    img: grabGameImg,
     title: "2D Game",
     link: "https://adoring-leakey-12080e.netlify.app/",
     tags: ["JS", "CSS", "HTML"],
