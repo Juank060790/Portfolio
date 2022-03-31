@@ -46,7 +46,7 @@ const Footer = () => {
               </p>
               <p>
                 © Copyright{" "}
-                <strong className="license">JuanCa-Portfolio 2021</strong>. All
+                <strong className="license">JuanCa-Portfolio 2022</strong>. All
                 Rights Reserved
               </p>
             </Col>

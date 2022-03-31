@@ -12,13 +12,13 @@ export default function NavbarTop() {
           fontSize: "23px",
           width: "100vw",
         }}
-        className="navbarMenu NavbarText m-auto "
+        className=" NavbarText m-auto "
         variant="dark"
         expand="lg"
       >
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="navbar-light">
+          <Nav className="navbar-styles ">
             <Nav.Link className="m-2 menulink" href="#home">
               JuanCa
             </Nav.Link>

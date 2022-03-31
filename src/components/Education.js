@@ -55,9 +55,9 @@ export default function Education() {
               <ul>
                 <li className="educationText educationList">
                   <i className="educationIcon fas fa-dot-circle"></i>A junior
-                  full stack web developer, with one year experience in HTML,
-                  CSS, Javascript, ReactJS, NodeJS, MongoDB, Figma, Python and
-                  GCP.
+                  full stack web developer, with more than one year experience
+                  in HTML, CSS, Javascript, ReactJS, NodeJS, MongoDB, Figma,
+                  Python and GCP.
                 </li>
                 <li className="educationText educationList">
                   <i className="educationIcon fas fa-dot-circle"></i>Passionate
@@ -68,6 +68,11 @@ export default function Education() {
                   like to be researching new technologies and keeping my
                   knowledge updated with the latest frameworks and trends in the
                   programming world.
+                </li>
+                <li className="educationText educationList">
+                  <i className="educationIcon fas fa-dot-circle"></i>Currently
+                  studying an online computer science degree at University of
+                  the people of California.
                 </li>
               </ul>
 

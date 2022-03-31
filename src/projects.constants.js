@@ -1,15 +1,15 @@
-import grabGameImg from "../src/images/grab-game.jpeg";
+// import grabGameImg from "../src/images/grab-game.jpeg";
+import gibbonGif from "../src/img/GibbonCalls.gif";
 
 export const projectsDemo = [
   {
     id: 0,
-    img: "https://res.cloudinary.com/juankspw/image/upload/v1626881353/sdtcshbslvrkx2tdjxbv.png",
+    img: gibbonGif,
     title: "Gibbon Calls Project",
-    link: "",
+    link: "https://youtu.be/kGOVOjNihQo",
     tags: ["Reactjs", "Firebase", "GCP"],
     description:
       "A user interface to access audio recordings files, interact with spectrogram images and files management.",
-    status: "In progress",
   },
   {
     id: 1,
@@ -48,15 +48,15 @@ export const projectsDemo = [
     description:
       "This page showcases my main craft: Photography. It is a reflection of what I have accomplished over the years.",
   },
-  {
-    id: 5,
-    img: grabGameImg,
-    title: "2D Game",
-    link: "https://adoring-leakey-12080e.netlify.app/",
-    tags: ["JS", "CSS", "HTML"],
-    description:
-      "A simple game that reflects the chaos of Vietnam’s traffic and scooter culture! This was made using JS, HTML and CSS.",
-  },
+  // {
+  //   id: 5,
+  //   img: grabGameImg,
+  //   title: "2D Game",
+  //   link: "https://adoring-leakey-12080e.netlify.app/",
+  //   tags: ["JS", "CSS", "HTML"],
+  //   description:
+  //     "A simple game that reflects the chaos of Vietnam’s traffic and scooter culture! This was made using JS, HTML and CSS.",
+  // },
   // {
   //   id: 6,
   //   img: "https://res.cloudinary.com/juankspw/image/upload/v1607408566/s1axp0wkxkeccccgwo5h.png",
