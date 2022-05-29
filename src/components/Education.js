@@ -55,9 +55,9 @@ export default function Education() {
               <ul>
                 <li className="educationText educationList">
                   <i className="educationIcon fas fa-dot-circle"></i>A junior
-                  full stack web developer, with more than one year experience
-                  in HTML, CSS, Javascript, ReactJS, NodeJS, MongoDB, Figma,
-                  Python and GCP.
+                  full stack web developer, with two years experience in HTML,
+                  CSS, Javascript, ReactJS, NodeJS, MongoDB, Figma, Python and
+                  GCP.
                 </li>
                 <li className="educationText educationList">
                   <i className="educationIcon fas fa-dot-circle"></i>Passionate

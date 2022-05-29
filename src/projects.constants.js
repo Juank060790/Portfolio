@@ -1,5 +1,7 @@
 // import grabGameImg from "../src/images/grab-game.jpeg";
 import gibbonGif from "../src/img/GibbonCalls.gif";
+import crypte from "../src/img/crypte.png";
+import gardenhousemx from "../src/img/Garden_House.jpg";
 
 export const projectsDemo = [
   {
@@ -41,22 +43,22 @@ export const projectsDemo = [
   },
   {
     id: 4,
-    img: "https://res.cloudinary.com/juankspw/image/upload/v1607408571/oslfgzxkdaweifknposo.png",
-    title: "Photography Website",
-    link: "https://juancaphotography.com/",
-    tags: ["Wordpress"],
+    img: gardenhousemx,
+    title: "Garden House Mexico",
+    link: "https://gardenhousemx.com/",
+    tags: ["Reactjs", "Firebase"],
     description:
-      "This page showcases my main craft: Photography. It is a reflection of what I have accomplished over the years.",
+      "This page was made for a business in Mexico, aiming the business to have a better online presence and to attract more customers.",
   },
-  // {
-  //   id: 5,
-  //   img: grabGameImg,
-  //   title: "2D Game",
-  //   link: "https://adoring-leakey-12080e.netlify.app/",
-  //   tags: ["JS", "CSS", "HTML"],
-  //   description:
-  //     "A simple game that reflects the chaos of Vietnam’s traffic and scooter culture! This was made using JS, HTML and CSS.",
-  // },
+  {
+    id: 5,
+    img: crypte,
+    title: "Crypto web platform",
+    link: "https://krypteapp.web.app/",
+    tags: ["ReactJs"],
+    description:
+      "A simple web where you can connect your Metamask wallet and send transactions to other users.",
+  },
   // {
   //   id: 6,
   //   img: "https://res.cloudinary.com/juankspw/image/upload/v1607408566/s1axp0wkxkeccccgwo5h.png",

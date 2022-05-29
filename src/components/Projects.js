@@ -60,7 +60,7 @@ const Projects = () => {
                     <img
                       className="project-image"
                       src={item.img}
-                      alt="project"
+                      alt={item.title}
                       width="100%"
                     />
 
@@ -108,7 +108,7 @@ const Projects = () => {
                     <img
                       className="project-image"
                       src={item.img}
-                      alt="project"
+                      alt={item.title}
                       width="100%"
                     />
                   </Container>
@@ -128,7 +128,7 @@ const Projects = () => {
                 <img
                   className="project-image"
                   src={item.img}
-                  alt="project"
+                  alt={item.title}
                   width="100%"
                 />
 
