@@ -37,8 +37,8 @@ const Clients = () => {
           logo={FaunaFlora}
           width={150}
         />
-        <ClientCard clientName="Coderschool" width={150} />
-        <ClientCard clientName="Despacho de Arquitectos" width={150} />
+        {/* <ClientCard clientName="Coderschool" width={150} />
+        <ClientCard clientName="Despacho de Arquitectos" width={150} /> */}
       </div>
     </div>
   );
