@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Container } from "react-bootstrap";
 import { useState, useRef } from "react";
 import "../App.css";
 import { projectsDemo } from "../projects.constants";
@@ -56,7 +55,7 @@ const Projects = () => {
             return (
               <div key={item.id}>
                 {item.id % 2 === 0 ? (
-                  <Container className="container-card">
+                  <div className="container-card">
                     <img
                       className="project-image"
                       src={item.img}
@@ -83,9 +82,9 @@ const Projects = () => {
                         </div>
                       </a>{" "}
                     </div>
-                  </Container>
+                  </div>
                 ) : (
-                  <Container className="container-card">
+                  <div className="container-card">
                     <div className="project-text">
                       <h2>{item.title}</h2>
                       <p className="project-text project-paragraph">
@@ -111,7 +110,7 @@ const Projects = () => {
                       alt={item.title}
                       width="100%"
                     />
-                  </Container>
+                  </div>
                 )}
               </div>
             );
@@ -124,7 +123,7 @@ const Projects = () => {
           {" "}
           {projects.map((item) => {
             return (
-              <Container key={item.id} className="container-card">
+              <div key={item.id} className="container-card">
                 <img
                   className="project-image"
                   src={item.img}
@@ -151,7 +150,7 @@ const Projects = () => {
                     </div>
                   </a>{" "}
                 </div>
-              </Container>
+              </div>
             );
           })}
         </div>
@@ -194,14 +193,14 @@ const Projects = () => {
 
   return (
     <>
-      <Container fluid className="animation" ref={paperPlaneAnimation}>
+      <div className="animation" ref={paperPlaneAnimation}>
         <img
           src={paperplane}
           alt="plane"
           ref={paperPlane}
           className="paper-plane"
         />
-      </Container>
+      </div>
 
       <div className="custom-shape-divider-bottom-1629436742">
         <svg
@@ -251,7 +250,7 @@ const Projects = () => {
         </svg>
       </div>
 
-      <Container fluid id="projects">
+      <div id="projects">
         <div style={{ margin: "2rem" }}>
           <h1
             className="projectTitle"
@@ -262,7 +261,7 @@ const Projects = () => {
         </div>
 
         <ProjectsData />
-      </Container>
+      </div>
     </>
   );
 };

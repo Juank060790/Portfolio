@@ -121,14 +121,14 @@ p {
 
 /* Projects BG */
 
-.container-card {
+/* .container-card {
   margin-bottom: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
+} */
 
 .project-image {
   width: 30%;
