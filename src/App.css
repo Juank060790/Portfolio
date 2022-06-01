@@ -129,6 +129,8 @@ p {
   align-items: center;
   flex-wrap: wrap;
   width: auto;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .project-image {
