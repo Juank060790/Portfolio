@@ -5,9 +5,9 @@ import FaunaFlora from "../../img/faunaFlora.png";
 import "./Clients.css";
 
 const ClientCard = (props) => {
-  const { clientLink, logo, width, clientName } = props;
+  const { clientLink, logo, width, clientName, className } = props;
   return (
-    <div className="client-card">
+    <div className={`${className} "client-card"`}>
       <a href={clientLink} target="_new">
         <img width={width} src={logo} alt={clientName} />
       </a>
@@ -27,6 +27,7 @@ const Clients = () => {
           clientLink="https://www.karmavn.com/"
         />
         <ClientCard
+          className="GardenHouse"
           clientName="GardenHouse"
           width={150}
           logo={GardenHouse}

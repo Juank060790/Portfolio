@@ -101,9 +101,9 @@ const Header = () => {
                 line_linked: {
                   enable: true,
                   distance: 150,
-                  color: "#c8c8c8",
-                  opacity: 0.1,
-                  width: 1,
+                  color: "#ffffff",
+                  opacity: 0.6,
+                  width: 0.5,
                 },
                 move: {
                   enable: true,

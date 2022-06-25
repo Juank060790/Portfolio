@@ -51,8 +51,8 @@ export default function Education() {
       <Jumbotron id="education" style={{ background: "none" }}>
         <Container className="d-flex logoFlexDirection ">
           <Col lg={6} md={5}>
-            <div className="">
-              <ul>
+            <div>
+              <ul className="text-ul">
                 <li className="educationText educationList">
                   <i className="educationIcon fas fa-dot-circle"></i>A junior
                   full stack web developer, with two years experience in HTML,
